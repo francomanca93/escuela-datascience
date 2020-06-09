@@ -65,3 +65,76 @@ Deficion programatica: Funcion que se llama a si misma.
 Aplicando recusividad
 - [Factorial](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/factoriales.py)
 - [Fibonacci](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/fibonacci.py)
+
+
+## Tipos estructurados, mutabilidad y funciones de alto nivel
+
+#### Funciones como objetos
+
+En Python todo es un objeto. En Python las funciones:
+- Tienen un tipo
+- Se pueden pasar como argumentos de otrasfunciones
+    - Las funciones ueden recibir otrasfunciones para crear abstracciones máspoderosas.
+- Se pueden utilizar en expresiones
+    - Una forma de definir una función en unaexpresión es utilizando el keyword lambda.lambda tiene la siguiente sintaxis:```lambda <vars>: <expresion>```
+- Se pueden incluir en varias estructuras dedatos (como listas, tuplas, diccionarios, etc.)
+
+#### Tuplas
+[Documentación de python de Tuplas](https://docs.python.org/3/library/stdtypes.html#tuple)
+- Secuencias inmutables de objetos. Es una lista de valores que no podemos modificar.
+- Pueden contener cualquier tipo de valor.
+- Puede utilizarse para devolver varios valores en una función.
+
+#### Rangos
+[Documentación de python de Rangos](https://docs.python.org/3/library/stdtypes.html#range)
+- Representan una secuencia de enteros.
+- range(comienzo, fin, pasos)
+- Son inmutables.
+- Eficientes en el uso de memoria y normalmente utilizados en for loops.
+
+#### Listas
+[Documentación de python de Listas](https://docs.python.org/3/library/stdtypes.html#list)
+##### Listas y mutabilidad
+- Son secuencias de objetos y mutables.
+- Cuando modificas un lista, pueden existir efectos secundarios (side effects).
+- Es posible iterar con ellas.
+- Para modificar una lista podemos:
+    - Asignar via indices (my_list[0] = 5)
+    - Utiilzar los metodos de la lista (append, pop, remove, insert, etc)
+##### Clonar
+- Para evitar errores, o bugs se pueden CLONAR
+        - Clonar es mejor que mutar.
+        - Para clonar una lista podemos usar slice (ej: ``` d = a[::]```) o la funcion list.
+##### List comprenhesion
+- Forma concisa de aplicar operaciones a los valores de una secuencia.
+- Tambien se pueden aplicar condiciones para filtrar. 
+- Ejemplo:
+```py
+my_list = list(range(100))
+double = [i * 2 for i in my_list]
+pares = [i for i in my_list if i % 2 == 0]
+```
+
+#### Diccionarios
+[Documentación de python de Diccionarios](https://docs.python.org/3/library/stdtypes.html#dict)
+- Son como listas, pero en lugar de usar indices utilizan llaves. 
+- Las llaves son como hashmap. Los hash generar valores unicos que nos permiten acceder a los valores del diccionario de forma SUPER EFICIENTE.
+- No tienen orden interno.
+- Los diccionarios son mutables.
+- Pueden iterarse. 
+```py
+my_dict = {
+    'Franco': 26,
+    'Maxi': 25,
+    'Fede': 25,
+}
+
+# Iterar por hash o llaves
+for llave my_dict.keys():
+    print(llave)
+
+# Iterar por valor
+for valor my_dict.value():
+    print(valor)
+```
+
