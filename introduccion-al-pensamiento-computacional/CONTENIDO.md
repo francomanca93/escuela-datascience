@@ -20,7 +20,8 @@ El contenido de este documento busca ser una guía a través de los conceptos de
     - [Debugging](#Debugging)
 - [Excepciones y afimaciones](#Excepciones-y-afimaciones)
     - [Manejo de excepciones](#Manejo-de-excepciones)
-
+    - [Excepciones como control de flujo](#Excepciones-como-control-de-flujo)
+    - [Afirmaciones](#Afirmaciones)
 
 
 ## Algoritmos básicos
