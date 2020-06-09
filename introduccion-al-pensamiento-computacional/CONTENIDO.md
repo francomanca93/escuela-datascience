@@ -209,7 +209,9 @@ Las excepciones se usan para manejar errores que sabemos que van a suceder en el
 **Cuando una excepcion no se maneja, el programa finaliza en error.**
 
 #### Manejo de excepciones
+
 [Practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/excepciones.py)
+
 Las excepciones se manejan con los keywords:``` try, except, finally```. Estas tambien pueden utilizarse para ramificar programas. 
 
 Una **mala práctica** es manajar las excepciones de manera silenciosa. Esto ocurre cuando utilizado, por ejemplo, print statements.
@@ -221,6 +223,9 @@ Existen dos casos de uso de excepciones:
 - Programación defensiva. Utilizando excepciones dentro de la función. 
 
 #### Excepciones como control de flujo
+
+[Practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/flujo-en-excepciones.py)
+
 Python ofrece estructuras para contro de flujo ```(if... elif...else)```; entonces, ¿por qué es necesaria otra modalidad para controlar el flujo? Una razón muy específica: el principio EAFP (*easier to ask for forgiveness than permission, es más fácil pedir perdón que permiso*, por sus siglas en inglés).
 
 El principio EAFP es un estilo de programación común en Python en el cual se asumen llaves, índices o atributos válidos y se captura la excepción si la suposición resulta ser falsa. 
