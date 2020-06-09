@@ -19,7 +19,7 @@ Objetivos del documento:
 ## Tabla de contenido 
 - [Programación orientada a objetos](#Programación-orientada-a-objetos)
     - [Programación orientada a objetos en Python](#Programación-orientada-a-objetos-en-python)
-    - [Tipos de datos abstractos, clases, instancias](#Tipos-de-datos-abstractos-clases-instancias)
+    - [Tipos de datos abstractos](#Tipos-de-datos-abstractos)
 - [Complejidad algorítmica](#Complejidad-algorítmica)
 
 - [Algoritmos de búsqueda y ordenación](#Algoritmos-de-búsqueda-y-ordenación)
@@ -74,9 +74,17 @@ llamando al constructor de la clase.
 hotel = Hotel()
 ```
 
+Los atributos de clase nos permiten:
+
+- Representar datos.
+- Procedimientos para interactuar con los mismos (métodos).
+- Mecanismos para esconder la representación.
+
+Para acceder a los atributos de estos objetos se hace a través de la notación de punto. Además puede tener atributos privados (Por convención comienzan con _ ).
+
+
 #### Atributos de la instancia
-Los atributos de la instancia describen lo que representa el
-objeto.
+Los atributos de la instancia describen lo que representa el objeto.
 
 Todas las clases crean objetos y todos los objetos tienen atributos. Utilizamos el método especial `__init__` para definir el estado inicial de nuestra instancia.
 
@@ -121,8 +129,69 @@ hotel.ocupacion_total() # 2
 
 ```
 
-### Tipos de datos abstractos, clases, instancias
+Estructura de la definición de una clase
 
+```py
+
+# definición de clase
+
+# Primero definimos el nombre de la clase y podemos determinar si hereda de otra clase.
+class nombre_de_la_clase(super_clase):
+
+    # El método init es un constructor, y siempre los métodos dentro
+    # de los parámetros inician con el parámetro self
+    def __init__(self, params):
+        expresion
+
+    # Las clases pueden tener comportamientos,
+    # y estos los definimos con los métodos.
+    def nombre_del_metodo(self, params):
+        expresion
+
+```
+
+Ejemplo:
+
+```py
+
+# Definición
+class Persona:
+
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+
+    def saluda(self, otra_persona):
+        return f'Hola {otra_persona.nombre}, me llamo {self.nombre}.'
+
+
+# Uso
+>>> david = Persona('David', 28)
+>>> karl = Persona('Karl', 26)
+>>> 
+>>> david.saluda(karl)
+>>> 'Hola Karl, me llamo David'
+
+```
+
+### Tipos de datos abstractos
+
+En Python todo es un objeto y tiene un tipo, esto significa que todo lo que hacemos en nuestro programa tiene una representación en memoria, los datos y el comportamiento se puede encapsular en un objeto.
+
+Los tipos nos permiten modelar y manipular el mundo a través de la programación.
+
+Las formas de interactuar con un objeto son:
+- Creación
+- Manipulación
+- Destrucción
+
+Cuando trabajamos con programación orientada a objetos tenemos varias ventajas:
+
+- **Decomposición**: podemos estructurarlos en objetos mas pequeños.
+- **Abstracción**: no nos preocupamos el funcionamiento del proceso de su comportamiento.
+- **Encapsulación**: podemos esconder ciertos datos que solo son relevantes internamente en el objeto.
+
+[Primera practica de POO en Python]()
 
 ## Complejidad algorítmica
 
