@@ -19,6 +19,7 @@ El contenido de este documento busca ser una guía a través de los conceptos de
     - [Pruebas de caja cristal](#Pruebas-de-caja-cristal)
     - [Debugging](#Debugging)
 - [Excepciones y afimaciones](#Excepciones-y-afimaciones)
+    - [Manejo de excepciones](#Manejo-de-excepciones)
 
 
 
@@ -208,6 +209,7 @@ Las excepciones se usan para manejar errores que sabemos que van a suceder en el
 **Cuando una excepcion no se maneja, el programa finaliza en error.**
 
 #### Manejo de excepciones
+[Practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/excepciones.py)
 Las excepciones se manejan con los keywords:``` try, except, finally```. Estas tambien pueden utilizarse para ramificar programas. 
 
 Una **mala práctica** es manajar las excepciones de manera silenciosa. Esto ocurre cuando utilizado, por ejemplo, print statements.
@@ -217,3 +219,41 @@ Para aventar tu propia excepcion utiliza el keyword raise + nombre de la excepci
 Existen dos casos de uso de excepciones:
 - Como usuario de una función. 
 - Programación defensiva. Utilizando excepciones dentro de la función. 
+
+#### Excepciones como control de flujo
+Python ofrece estructuras para contro de flujo ```(if... elif...else)```; entonces, ¿por qué es necesaria otra modalidad para controlar el flujo? Una razón muy específica: el principio EAFP (*easier to ask for forgiveness than permission, es más fácil pedir perdón que permiso*, por sus siglas en inglés).
+
+El principio EAFP es un estilo de programación común en Python en el cual se asumen llaves, índices o atributos válidos y se captura la excepción si la suposición resulta ser falsa. 
+```py
+def busca_pais(paises, pais):
+    """
+    Paises es un diccionario. Pais es la llave.
+    Codigo con el principio EAFP.
+    """
+    
+    try:
+        return paises[pais]
+    except KeyError:
+        return None
+```
+Es importante resaltar que otros lenguajes de programación favorecen el principio LBYL (*look before you leap, revisa antes de saltar*) en el cual el código verifica de manera explícita las precondiciones antes de realizar llamadas.
+```javascript
+// Javascript
+
+/**
+* Paises es un objeto. Pais es la llave.
+* Codigo con el principio LBYL.
+*/
+function buscaPais(paises, pais) {
+  if(!Object.keys(paises).includes(pais)) {
+    return null;
+  }
+
+  return paises[pais];
+}
+```
+
+El código de Python accede directamente a la llave y únicamente
+si dicho acceso falla, entonces se captura la excepción y se provee el código necesario. 
+
+En el caso de JavaScript, se verifica primero que la llave exista en el objeto y únicamente con posterioridad se accede.
