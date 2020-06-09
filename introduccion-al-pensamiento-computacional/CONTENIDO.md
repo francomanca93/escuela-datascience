@@ -25,7 +25,7 @@ El contenido de este documento busca ser una guía a través de los conceptos de
 ## Algoritmos básicos
 
 #### Enumeración exhaustiva. 
-[Practica]()
+[Práctica](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/enumeracion.py)
 
 Tambien llamado ["busqueda de fuerza bruta"](https://es.wikipedia.org/wiki/B%C3%BAsqueda_de_fuerza_bruta) o "adivida y verifica".
 
@@ -34,7 +34,7 @@ Consiste en enumerar sistemáticamente todos los posibles candidatos para la sol
 Uno de los primero algoritmos en los que hay que pensar.
 
 #### Aproximacion de soluciones. 
-[Prática]()
+[Práctica](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/aproximacion.py)
 
 Similar al algoritmo de Enumeración exhaustiva, pero no necesita una respuesta exacta.
 
@@ -45,9 +45,11 @@ Si nos queremos aproximar a una solucion tenemos que definir que tan cerca quere
 Como siempre en programación debemos hacer un trade-off, no podemos ser precisos y rápidos a la ves, por lo tanto cuando nuestro epsilon es muy pequeño esto significa que debemos realizar mas iteraciones para llegar a la aproximación, lo cual significa sacrificar tiempo. Y por otro lado si queremos que nuestro tiempo de ejecución sea lo mas corto posible debemos sacrificar la precisión aumentando el valor de epsilon.
 
 #### Busqueda binaria. 
-[Practica]()
+[Práctica](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/busqueda_binaria.py)
 
 [Busqueda binaria](https://es.wikipedia.org/wiki/B%C3%BAsqueda_binaria) es un algoritmo de búsqueda que encuentra la posición de un valor en un array ordenado.​ 
 
 Compara el valor con el elemento en el medio del array, si no son iguales, la mitad en la cual el valor no puede estar es eliminada y la búsqueda continúa en la mitad restante hasta que el valor se encuentre.
 
+
+[Programa uniedo todos los algoritmos básicos utilizando funciones.](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/funciones.py)
