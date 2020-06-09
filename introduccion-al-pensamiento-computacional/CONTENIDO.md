@@ -174,3 +174,29 @@ Importantes para:
         - Entrar una vez al loop
         - Entrar mas de una vez al loop
     - Test recursion: Igual que el caso de test loop
+
+
+### Debugging
+
+Un bug es un error o un defecto en el software o hardware que hace que un programa funcione incorrectamente.
+
+La mejor forma de evitar bugs es tener test. 
+#### Reglas generales: 
+- No te molestes con el debugger. Aprender a utilizar el print statement. Esto no da una mirada de lo que esta sucediendo dentro del algoritmo. Esto nos genera datos.
+- Estudia los datos disponibles.
+- Utiliza los datos para crear hipótesis y experimentos. Método científico.
+- Ten una mente abierta. Si entendieras el programa, probablmente no habrían bugs.
+- Lleva un registro de los que has tratado, preferentemente en la forma de tests. 
+
+#### Diseño de experimentos
+Debuguear es un proceso de búsqueda de los bugs, por lo que al diseñar nuestros experimentos debemos acotar el espacio de búsqueda en cada prueba. 
+
+Una forma ágil de debugear es utilizando una búsqueda binaria con print statements, esto significa que ejecutamos la mitad del código, si no falla entonces sabemos que el problema esta en la otra mitad, y en cada área que vamos acortando lo dividimos por mitades, de esta forma hallaremos rápidamente nuestro bug.
+
+#### Errores comunes:
+
+- Encuentra a los sospechosos comunes (llamado a una función mal escrita, parámetros en orden incorrecto, etc.)
+- En lugar de preguntarte por qué un programa no funciona, pregúntate por qué está funcionando de esta manera.
+- Es posible que el bug no se encuentre donde crees que está.
+- Explícale el problema a otra persona. De preferencia que no tenga contexto.- Lleva un registro de lo que has tratado, preferentemente en la forma de tests.
+- Vete a dormir.
