@@ -138,3 +138,39 @@ for valor my_dict.value():
     print(valor)
 ```
 
+
+## Pruebas y debugging
+
+Las pruebas asumen que existe el código. Se crean las pruebas, luego el codigo. 
+
+### Pruebas de caja negra
+[Practica]()
+
+- Se basan en la especificacion de la función o el programa. 
+- Se prueban inputs y se validan outputs. 
+- Se asume que no conocemos la implmentación.
+
+Importantes para 2 tipos de test:
+- **Unit testing**. Se prueba funcion por funcion.Viendo que cada modulo funcione correctamente.
+- **Integreation testing**. Se ve como todo un conjuntoy se hacen pruebas para corroborar que todo funcionacomo un tal.
+
+En Python se llama a Test Driven development a las pruebas que queremos realizar a los metodos que queremos crear. Se puede utilizar el módulo que nos permite generar pruebas, [unittest](https://docs.python.org/3.8/library/unittest.html): ```import unittest```. 
+
+Se trata de escribir test primero, lo cual se puede detectar posibles errores. Cuando se plantean los test de una funcion, se pueden plantear las posibles soluciones. 
+
+### Pruebas de caja cristal 
+[Practica]()
+- Se basan en el flujo del programa. 
+- Se prueban todos los caminos posibles de una función. Ramificaciones, bucles for y while, recursión.
+
+Importantes para:
+- **Regression testing o mocks**: Descubrir un bug despues de que el programa salio a producción.
+    - Test Ramificaciones:
+        - if
+        - elif
+        - else
+    - Test Loop:
+        - No entrar al loop
+        - Entrar una vez al loop
+        - Entrar mas de una vez al loop
+    - Test recursion: Igual que el caso de test loop
