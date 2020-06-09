@@ -200,3 +200,20 @@ Una forma ágil de debugear es utilizando una búsqueda binaria con print statem
 - Es posible que el bug no se encuentre donde crees que está.
 - Explícale el problema a otra persona. De preferencia que no tenga contexto.- Lleva un registro de lo que has tratado, preferentemente en la forma de tests.
 - Vete a dormir.
+
+# Excepciones y afimaciones
+
+Las excepciones se usan para manejar errores que sabemos que van a suceder en el software que realizamos. Estas son muy comunes en la programación y se relacioan con errores de semántica. Existe la posibilidad de crear excepciones propias si estas no existieran.
+
+**Cuando una excepcion no se maneja, el programa finaliza en error.**
+
+#### Manejo de excepciones
+Las excepciones se manejan con los keywords:``` try, except, finally```. Estas tambien pueden utilizarse para ramificar programas. 
+
+Una **mala práctica** es manajar las excepciones de manera silenciosa. Esto ocurre cuando utilizado, por ejemplo, print statements.
+
+Para aventar tu propia excepcion utiliza el keyword raise + nombre de la excepcion. 
+
+Existen dos casos de uso de excepciones:
+- Como usuario de una función. 
+- Programación defensiva. Utilizando excepciones dentro de la función. 
