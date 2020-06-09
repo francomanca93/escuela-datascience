@@ -53,3 +53,15 @@ Compara el valor con el elemento en el medio del array, si no son iguales, la mi
 
 
 [Programa uniedo todos los algoritmos básicos utilizando funciones.](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/funciones.py)
+
+## Recursividad
+
+[Recursividad](https://es.wikipedia.org/wiki/Recursi%C3%B3n_(ciencias_de_computaci%C3%B3n))
+
+Deficion algoritmica: Forma de crear soluciones utilizando el concepto de "divide y venceras". Esto significa que un problema podemos resolverlo utilizando versiones mas pequeñas del mismo problema. Se trata de encontrar una solucion base facil de resolver y utilizarla para que iterativamente encontremos la solucion del problema.
+
+Deficion programatica: Funcion que se llama a si misma.
+
+Aplicando recusividad
+- [Factorial]()
+- [Fibonacci]()
