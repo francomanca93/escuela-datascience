@@ -191,7 +191,7 @@ Cuando trabajamos con programación orientada a objetos tenemos varias ventajas:
 - **Abstracción**: no nos preocupamos el funcionamiento del proceso de su comportamiento.
 - **Encapsulación**: podemos esconder ciertos datos que solo son relevantes internamente en el objeto.
 
-[Primera practica de POO en Python]()
+[Primera practica de POO en Python](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/coordenada.py)
 
 ## Complejidad algorítmica
 
