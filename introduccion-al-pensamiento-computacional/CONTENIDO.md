@@ -262,3 +262,13 @@ El código de Python accede directamente a la llave y únicamente
 si dicho acceso falla, entonces se captura la excepción y se provee el código necesario. 
 
 En el caso de JavaScript, se verifica primero que la llave exista en el objeto y únicamente con posterioridad se accede.
+
+#### Afirmaciones
+Mecanismo mediante el cual podemos determinar si una condición se cumple o no. En función de esto seguir adelante con el programa o terminar dicha ejecución.
+
+Es un método de programación defensiva. Se puede utilizar para verificar los tipos de datos de entrada (input) de una función sean correctos.
+
+Sirve para debuguear. 
+
+[Utilizando asserts con excepciones](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/afirmaciones.py)
+ 
