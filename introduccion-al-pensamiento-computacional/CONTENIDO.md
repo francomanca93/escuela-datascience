@@ -63,5 +63,5 @@ Deficion algoritmica: Forma de crear soluciones utilizando el concepto de "divid
 Deficion programatica: Funcion que se llama a si misma.
 
 Aplicando recusividad
-- [Factorial]()
-- [Fibonacci]()
+- [Factorial](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/factoriales.py)
+- [Fibonacci](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/fibonacci.py)
