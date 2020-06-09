@@ -144,7 +144,7 @@ for valor my_dict.value():
 Las pruebas asumen que existe el código. Se crean las pruebas, luego el codigo. 
 
 ### Pruebas de caja negra
-[Practica]()
+[Practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/caja_negra.py)
 
 - Se basan en la especificacion de la función o el programa. 
 - Se prueban inputs y se validan outputs. 
@@ -159,7 +159,7 @@ En Python se llama a Test Driven development a las pruebas que queremos realizar
 Se trata de escribir test primero, lo cual se puede detectar posibles errores. Cuando se plantean los test de una funcion, se pueden plantear las posibles soluciones. 
 
 ### Pruebas de caja cristal 
-[Practica]()
+[Practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/caja_cristal.py)
 - Se basan en el flujo del programa. 
 - Se prueban todos los caminos posibles de una función. Ramificaciones, bucles for y while, recursión.
 
