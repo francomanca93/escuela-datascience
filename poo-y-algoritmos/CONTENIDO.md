@@ -21,6 +21,7 @@ Objetivos del documento:
     - [Programación orientada a objetos en Python](#Programación-orientada-a-objetos-en-python)
     - [Tipos de datos abstractos](#Tipos-de-datos-abstractos)
     - [Decomposición](#Decomposición)
+    - [Abstracción](#Abstracción)
 - [Complejidad algorítmica](#Complejidad-algorítmica)
 
 - [Algoritmos de búsqueda y ordenación](#Algoritmos-de-búsqueda-y-ordenación)
@@ -203,6 +204,12 @@ Las clases permiten crear mayores abstracciones en forma de componentes.
 Cada clase se encarga de una parte del problema y el programa se vuelve más fácil de mantener.
 
 [Practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/decomposicion.py). Ejemplo simple en el cual se trata de modelar un automovil y decomponer en clases que representen a otros objetos, ejemplo, Motor.
+
+### Abstracción
+
+Se trata de enfocarnos en la información relevante. Se debe separar la información central de los detalles secundarios. Para realizar este procedimiento podemos utilizar variables y métodos (privados o públicos). [Más info en Wiki](https://es.wikipedia.org/wiki/Abstracci%C3%B3n_(inform%C3%A1tica))
+
+[Practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/abstraccion.py). Ejemplo simple en el cual se trata de modelar una Lavadora y abstraerse del funcionamiento de la misma con métodos ocultos.
 
 ## Complejidad algorítmica
 
