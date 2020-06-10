@@ -20,6 +20,7 @@ Objetivos del documento:
 - [Programación orientada a objetos](#Programación-orientada-a-objetos)
     - [Programación orientada a objetos en Python](#Programación-orientada-a-objetos-en-python)
     - [Tipos de datos abstractos](#Tipos-de-datos-abstractos)
+    - [Decomposición](#Decomposición)
 - [Complejidad algorítmica](#Complejidad-algorítmica)
 
 - [Algoritmos de búsqueda y ordenación](#Algoritmos-de-búsqueda-y-ordenación)
@@ -192,6 +193,16 @@ Cuando trabajamos con programación orientada a objetos tenemos varias ventajas:
 - **Encapsulación**: podemos esconder ciertos datos que solo son relevantes internamente en el objeto.
 
 [Primera practica de POO en Python](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/coordenada.py)
+
+### Decomposición
+
+La decomposición es partir un problema en problemas más pequeños. 
+
+Las clases permiten crear mayores abstracciones en forma de componentes. 
+
+Cada clase se encarga de una parte del problema y el programa se vuelve más fácil de mantener.
+
+[Practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/decomposicion.py). Ejemplo simple en el cual se trata de modelar un automovil y decomponer en clases que representen a otros objetos, ejemplo, Motor.
 
 ## Complejidad algorítmica
 
