@@ -22,6 +22,7 @@ Objetivos del documento:
     - [Tipos de datos abstractos](#Tipos-de-datos-abstractos)
     - [Decomposición](#Decomposición)
     - [Abstracción](#Abstracción)
+    - [Encapsulación y getters and setters](#Encapsulación-y-getters-and-setters)
 - [Complejidad algorítmica](#Complejidad-algorítmica)
 
 - [Algoritmos de búsqueda y ordenación](#Algoritmos-de-búsqueda-y-ordenación)
@@ -37,6 +38,8 @@ Objetivos del documento:
 ## Programación orientada a objetos
 
 ### Programación orientada a objetos en Python
+
+[Más info en Wiki](https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos)
 
 Uno de los elementos más importantes de los lenguajes de programación es la utilización de clases para organizar programas en módulos y abstracciones de datos.
 
@@ -210,6 +213,57 @@ Cada clase se encarga de una parte del problema y el programa se vuelve más fá
 Se trata de enfocarnos en la información relevante. Se debe separar la información central de los detalles secundarios. Para realizar este procedimiento podemos utilizar variables y métodos (privados o públicos). [Más info en Wiki](https://es.wikipedia.org/wiki/Abstracci%C3%B3n_(inform%C3%A1tica))
 
 [Practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/abstraccion.py). Ejemplo simple en el cual se trata de modelar una Lavadora y abstraerse del funcionamiento de la misma con métodos ocultos.
+
+### Encapsulación y getters and setters
+
+En programación modular, y más específicamente en programación orientada a objetos, se denomina encapsulamiento al **ocultamiento del estado**, lo que hacemos específicamente es **proteger** los datos miembro de un objeto de manera que solo se pueda cambiar mediante las **operaciones definidas** para ese objeto. [Más info en Wiki](https://es.wikipedia.org/wiki/Encapsulamiento_(inform%C3%A1tica))
+
+Esto nos asegura por ejemplo que “no podremos modificar un atributo si no es a través de un método que hallamos creado específicamente para ello” y aquí es donde nacen los famosos **“Getter, Setter, Deleter”**. Se
+
+**En python las propiedades y métodos privados no existen, por lo que son fácilmente sobre-escribibles.**
+
+#### Atributos protegidos en Python (“_”)
+```py
+class usuario (object):
+	def __init__(self, nombre, clave):
+		self.nombre = nombre
+		self._clave = clave  # ATRIBUTO PROTEGIDO
+		
+Usuario1 = usuario ("Roberto", "qwerty")
+ 
+print (Usuario1.nombre, Usuario1._clave)
+```
+
+#### Atributos privados en Python (“__”)
+
+En el caso de un atributo privado estamos indicando que este solo podrá ser accedido o modificado si se especifica la clase precedida por un guión bajo seguida del atributo precedido por doble guión bajo.
+
+```py
+class usuario (object):
+	def __init__(self, nombre, clave):
+		self.nombre = nombre
+		self.__clave = clave
+		
+Usuario1 = usuario ("Roberto", "qwerty")
+ 
+print (Usuario1.nombre, Usuario1._usuario__clave)  # FORMA DE ACCEDER AL ATRIBUTO PRIVADO
+```
+
+Podemos acceder igualmente a un atributo por más que sea privado y modificarlo de la misma manera. Pero no es lo que se “considera correcto”. Por lo que para ello si deseamos implementar métodos que nos permitan modificar estos atributos de la forma que se suele hacer en otros lenguajes donde se aplica “encapsulamiento” podemos hacerlo utilizando **Getter, Setter, Deleter** mediante el uso del decorador `@Property`.
+
+La función integrada `property()` nos permitirá interceptar la escritura, lectura, borrado de los atributos y ademas nos permiten incorporar una documentación sobre los mismos.
+
+Si nosotros no pasamos alguno de los parámetros su valor por defecto sera None.
+
+- Getter: Se encargará de interceptar la lectura del atributo. (get = obtener)
+
+- Setter : Se encarga de interceptar cuando se escriba. (set = definir o escribir)
+
+- Deleter : Se encarga de interceptar cuando es borrado. (delete = borrar)
+
+- doc :  Recibirá una cadena para documentar el atributo. (doc = documentación)
+
+[Practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/encapsulamiento.py). Ejemplo simple en el cual se trata de modelar un Perro y encapsular las propiedades o atributos del mismo. Luego se trata de obtener (get), definir y/o escribir (set) y borrar (delete) estas propiedades utilizando el decorador `@property` con los métodos adecuados para realizar las acciones anteriores.
 
 ## Complejidad algorítmica
 
