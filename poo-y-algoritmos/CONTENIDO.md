@@ -23,6 +23,7 @@ Objetivos del documento:
     - [Decomposición](#Decomposición)
     - [Abstracción](#Abstracción)
     - [Encapsulación y getters and setters](#Encapsulación-y-getters-and-setters)
+    - [Herencia](#Herencia)
 - [Complejidad algorítmica](#Complejidad-algorítmica)
 
 - [Algoritmos de búsqueda y ordenación](#Algoritmos-de-búsqueda-y-ordenación)
@@ -264,6 +265,32 @@ Si nosotros no pasamos alguno de los parámetros su valor por defecto sera None.
 - doc :  Recibirá una cadena para documentar el atributo. (doc = documentación)
 
 [Practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/encapsulamiento.py). Ejemplo simple en el cual se trata de modelar un Perro y encapsular las propiedades o atributos del mismo. Luego se trata de obtener (get), definir y/o escribir (set) y borrar (delete) estas propiedades utilizando el decorador `@property` con los métodos adecuados para realizar las acciones anteriores.
+
+### Herencia
+
+La [herencia](https://es.wikipedia.org/wiki/Herencia_(inform%C3%A1tica)) permite modelar una jerarquía de clases, con el cual compartiremos comportamientos en común. Al padre se le conoce como superclase y al hijo como subclase.
+
+[Practicando](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/herencia.py). Ejemplo simple en el cual se modela un Rectangulo con su defición. Luego un Cuadrado hereda el comportamiento de esta última sabiendo que es una caso especial donde la base y la altura son iguales. 
+
+#### Herencia simple vs Herencia multiple
+
+La **herencia simple** tiene lugar cuando una clase hija hereda los atributos y métodos de una **única** clase padre.
+
+Para que sea posible la herencia de atributos y métodos de una clase, debe existir la superclase o clase principal de la cual la clase hija o secundaria va a heredar. Es decir, para que exista un hijo debe de existir un padre.
+
+Supongamos que nosotros heredamos algunas virtudes y defectos de nuestros padres. Ellos serían nuestras clases primarias, o base. Y nosotros seríamos la secundaria o hija.
+
+Los casos de **herencia múltiple** en python se dan cuando una clase secundaria o hija hereda atributos y metodos de mas de una clase principal o padre.
+
+#### Ventajas de su aplicación
+
+- Ayuda a ahorrar código y tiempo.
+
+- Los objetos pueden ser construidos a partir de otros similares. Para ello es necesario que exista una clase base (que incluso puede formar parte de una jerarquía de clases más amplia).
+
+- La clase derivada hereda el comportamiento y los atributos de la clase base, y es común que se le añada su propio comportamiento o que modifique lo heredado.
+
+- Toda clase pueden servir como clase base para crear otras.
 
 ## Complejidad algorítmica
 
