@@ -27,6 +27,7 @@ Objetivos del documento:
     - [Polimorfismo](#Polimorfismo)
 - [Complejidad algorítmica](#Complejidad-algorítmica)
     - [Introducción a la complejidad algorítmica](#Introducción-a-la-complejidad-algorítmica)
+    - [Conteo abstracto de operación](#Conteo-abstracto-de-operación)
 
 - [Algoritmos de búsqueda y ordenación](#Algoritmos-de-búsqueda-y-ordenación)
 
@@ -326,6 +327,43 @@ En Resumen:
 - Contar los pasos conforme nos aproximamos al infinito pero con una medida asintótica.
 
 [Practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/complejidad_algoritmica.py). En la siguiente práctica se analiza la complejidad algoritmica y se trata de demostrar como el tiempo cambia de un algoritmo iterativo y otro recursivo.
+
+### Conteo abstracto de operación
+
+Con esta técnica contamos los pasos que realiza nuestro algoritmo. En el siguiente ejemplo respuesta tendrá los números de pasos que realiza nuestro código al ejecutar.
+
+```py
+def f(x):
+
+    # Primera operación
+    respuesta = 0
+
+    # Segunda operacion. Sin importar de x este loop correrá 1000 veces.
+    for i in range(1000):
+        respuesta += 1
+
+    # Tercera operación. Este loop correrá el valor de x
+    for i in range(x):
+        respuesta += x
+
+    # Cuarta operación. Esta parte esta corriendo 2 loop. Esto será 2x² 
+    for i in range(x):  
+        for j in range(x):
+            respuesta += 1
+            respuesta += 1
+
+    # Quinta operación.
+    return respuesta
+
+# Respuesta
+# 1002 + x + 2x²
+```
+
+Los términos que más importan son los más grandes, osea, conforme nuestro problema se va haciendo más grande sólo nos importa el término más grande.
+La **Big O notation** no permitirá analizar los términos mas irrelevantes el algoritrmo y sólo concentrarnos en los mas importantes.
+
+[Práctica](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/conteo_abstracto.py)
+
 
 ## Algoritmos de búsqueda y ordenación
 
