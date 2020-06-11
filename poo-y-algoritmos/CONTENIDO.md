@@ -365,6 +365,80 @@ La **Big O notation** no permitirá analizar los términos mas irrelevantes el a
 [Práctica](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/conteo_abstracto.py)
 
 
+### Crecimiento asintótico
+
+¿Como comparar algoritmos?
+Podemos tomar el tiempo que tardan estos en correr, pero esto resulta ineficiente y depende del hardware directamente.
+
+La segunda opción es contar la cantidad de pasos que dá el algoritmo. Pero nos dimos cuenta que hay terminos que no importan cuando se van al infinito.
+
+
+Antes de analizar la mejor forma de analizar un algoritmo se debe entender que es **[Asintótico](https://es.wikipedia.org/wiki/An%C3%A1lisis_asint%C3%B3tico)**. Esto significa que conforme la función se va al infinito o el input crece hacia el infinito. 
+
+Teniendo tal concepto aclarado debemos tener en cuenta que no importan las variaciones pequeñas. Lo que realmente importa es centrarse en lo que pasa conforme el tamaño del problema se acerca al infinito.
+
+Siempre tenemos que estar preparados para cualquier caso, por lo que tenemos que saber medir a nuestro algoritmo en el mejor de los casos, el caso promedio y peor de los casos.
+
+Lo que mejor nos permite comparar y entender cual es la complejidad real algoritmica a la cual nos estamos enfrentando es el peor de los casos. En este caso es cuando entra el **Big O Notation**.
+
+**Big O Notation** lo que importa es nada mas el término de mayor tamaño.
+
+Ejemplos de como poder trabajar con Big O:
+
+#### Ley de la suma
+
+```py
+def f(n):
+    for i in range(n):
+        print(i)
+
+    for i in range(n):
+        print(i)
+
+# En este caso el mayor término es n
+# O(n) + O(n) = O(n + n) = O(2n) = O(n)
+```
+#### Ley de la suma 2
+```py
+def f(n):
+    for i in range(n):
+        print(i)
+
+    for i in range(n * n):
+        print(i)
+
+# En este caso el mayor término es n²
+# O(n) + O(n * n) = O(n + n²) = O(n²)
+```
+
+#### Ley de la multiplicación
+
+```py
+def f(n):
+
+    for i in range(n):
+
+        for i in range(n):
+            print(i, j)
+
+# En este caso el mayor término es n²
+# O(n) + O(n * n) = O(n * n) = O(n²)
+```
+#### Recursividad múltiple
+
+```py
+def fibonacci(n):
+
+    if n == 0 or n == 1:
+        return 1
+
+    return fibonacci(n - 1) +  fibonacci(n - 2)
+
+# En este caso el mayor término es 2**n (el símbolo ** denota "elevado a"),
+# ya que realiza recursividad 2 veces por n veces.
+# O(2**n)
+```
+
 ## Algoritmos de búsqueda y ordenación
 
 ## Ambientes virtuales
