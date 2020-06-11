@@ -24,6 +24,7 @@ Objetivos del documento:
     - [Abstracción](#Abstracción)
     - [Encapsulación y getters and setters](#Encapsulación-y-getters-and-setters)
     - [Herencia](#Herencia)
+    - [Polimorfismo](#Polimorfismo)
 - [Complejidad algorítmica](#Complejidad-algorítmica)
 
 - [Algoritmos de búsqueda y ordenación](#Algoritmos-de-búsqueda-y-ordenación)
@@ -291,6 +292,13 @@ Los casos de **herencia múltiple** en python se dan cuando una clase secundaria
 - La clase derivada hereda el comportamiento y los atributos de la clase base, y es común que se le añada su propio comportamiento o que modifique lo heredado.
 
 - Toda clase pueden servir como clase base para crear otras.
+
+### Polimorfismo
+
+El [polimorfismo](https://es.wikipedia.org/wiki/Polimorfismo_(inform%C3%A1tica)) es la habilidad de tomar varias formas, en este caso la habilidad de cambiar el comportamiento de un método.Este concepto esta estrechamente ligado con la herencia y que nos permite cambiar el comportamiento de una superclase para adaptarlo a la subclase solo nombrando el método y escribiendo su comportamiento.
+
+[Practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/polimorfismo.py). Se crea una clase padre llamada Persona que avanza. La segunda clase Ciclista hereda de Persona, pero avanza en bicicleta. El comportamiento anterior se observa en el ejemplo.
+
 
 ## Complejidad algorítmica
 
