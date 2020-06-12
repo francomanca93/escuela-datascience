@@ -30,9 +30,12 @@ Objetivos del documento:
     - [Conteo abstracto de operación](#Conteo-abstracto-de-operación)
     - [Crecimiento asintótico](#Crecimiento-asintótico)
     - [Clases de complejidad algorítmica](#Clases-de-complejidad-algorítmica)
-
 - [Algoritmos de búsqueda y ordenación](#Algoritmos-de-búsqueda-y-ordenación)
-
+    - [Busqueda Lineal](#Busqueda-Lineal)
+    - [Busqueda binaria](#Busqueda-binaria)
+    - [Ordenamiento de burbuja](#Ordenamiento-de-burbuja)
+    - [Ordenamiento por inserción](#Ordenamiento-por-inserción)
+    - [Ordenamiento por mezcla](#Ordenamiento-por-mezcla)
 - [Ambientes virtuales](#Ambientes-virtuales)
 
 - [Graficar](#Graficar)
@@ -466,7 +469,23 @@ Existen distintos tipos de complejidad algorítmica:
 
 En el siguiente [enlace](https://www.bigocheatsheet.com/) se observa la fuente el gráfico anterior y la clasificación de los algoritmos en función de la complejidad Big-O.
 
+Se puede leer más al respecto en [Eficiencia algorítmica](https://es.wikipedia.org/wiki/Eficiencia_algor%C3%ADtmica).
+
 ## Algoritmos de búsqueda y ordenación
+Objetivos de esta sección:
+1. Aplicar los conceptos de complejidad algoritmica. 
+2. Aprender algoritmos de búsqueda y ordenación para resolver problemas. 
+
+### Busqueda Lineal
+
+### Busqueda binaria
+
+### Ordenamiento de burbuja
+
+### Ordenamiento por inserción
+
+### Ordenamiento por mezcla
+
 
 ## Ambientes virtuales
 
