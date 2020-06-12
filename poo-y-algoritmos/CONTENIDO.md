@@ -28,6 +28,8 @@ Objetivos del documento:
 - [Complejidad algorítmica](#Complejidad-algorítmica)
     - [Introducción a la complejidad algorítmica](#Introducción-a-la-complejidad-algorítmica)
     - [Conteo abstracto de operación](#Conteo-abstracto-de-operación)
+    - [Crecimiento asintótico](#Crecimiento-asintótico)
+    - [Clases de complejidad algorítmica](#Clases-de-complejidad-algorítmica)
 
 - [Algoritmos de búsqueda y ordenación](#Algoritmos-de-búsqueda-y-ordenación)
 
@@ -438,6 +440,31 @@ def fibonacci(n):
 # ya que realiza recursividad 2 veces por n veces.
 # O(2**n)
 ```
+### Clases de complejidad algorítmica
+
+[Big O Notation](https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation) o **Notación Big O** es la **representación relativa** de la **complejidad** de un algoritmo.
+
+> **Relativa**: Solo puede comparar manzanas con manzanas. No puedes comparar un algoritmo con una multiplicación aritmetica que ordene una lista de enteros. Pero una comparación de dos algorítmos para hacer operaciones aritméticas (una multiplicación, una adición) te dirán algo significativo.
+
+> **Representación**: Big-O reduce la comparación entre algoritmos a una simple variable. Esta variable es elegida basandose en la observación. 
+
+> **Complejidad**: Si algo me toma un segundo en ordenar 10 000 elementos, cuanto me tomará ordenar 1M?. La complejidad en esta instancia es una medida relativa a otra cosa.
+
+Existen distintos tipos de complejidad algorítmica:
+
+- **O(1) Constante:** no importa la cantidad de input que reciba, siempre demorara el **mismo tiempo**.
+- **O(n) Lineal:** la complejidad crecerá de forma **proporcional** a medida que crezca el input.
+- **O(log n) Logarítmica:** nuestra función crecerá de forma **logarítmica** con respecto al input. Esto significa que en un inicio crecerá rápido, pero luego se estabilizara.
+- **O(n log n) Log lineal:** crecerá de forma **logarítmica** pero junto con una **constante**.
+- **O(n²) Polinomial:** crecen de forma cuadrática. No son recomendables a menos que el input de datos sea pequeño.
+- **O(2^n) Exponencial:** crecerá de forma **exponencial**, por lo que la carga es muy alta. Para nada recomendable en ningún caso, solo para análisis conceptual.
+- **O(n!) Factorial:** crece de forma **factorial**, por lo que al igual que el exponencial su carga es muy alta, por lo que jamas utilizar algoritmos de este tipo.
+
+<div align="center"> 
+  <img src="readme_img/big_O_notation.png" width="500">
+</div>
+
+En el siguiente [enlace](https://www.bigocheatsheet.com/) se observa la fuente el gráfico anterior y la clasificación de los algoritmos en función de la complejidad Big-O.
 
 ## Algoritmos de búsqueda y ordenación
 
