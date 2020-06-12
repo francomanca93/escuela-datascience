@@ -477,6 +477,9 @@ Objetivos de esta sección:
 2. Aprender algoritmos de búsqueda y ordenación para resolver problemas. 
 
 ### Busqueda Lineal
+La [**búsqueda lineal**](https://es.wikipedia.org/wiki/B%C3%BAsqueda_lineal) o la **búsqueda secuencial** es un método para encontrar un valor objetivo dentro de una lista.Ésta comprueba secuencialmente cada elemento de la lista para el valor objetivo hasta que es encontrado o hasta que todos los elementos hayan sido comparados.
+
+En la siguiente [práctica](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/busqueda_lineal.py) se observa el algoritmo escrito. Analizando al mismo ¿Cuál es el peor caso? Si nos fijamos en el [algoritmo](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/busqueda_lineal.py) existe un for loop que crece según el tamaño de la lista, por lo cual nuestro Big O es **O(n)**.
 
 ### Busqueda binaria
 
