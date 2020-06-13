@@ -532,6 +532,27 @@ En el siguiente gráfico se puede observar una comparativa entre el algoritmo de
 
 ### Ordenamiento de burbuja
 
+El algoritmo de [ordenamiento burbuja](https://es.wikipedia.org/wiki/Ordenamiento_de_burbuja) es un algoritmo que recorre repetidamente una lista que necesita ordenarse. Compara elementos adyacentes y los intercambia si están en el orden incorrecto. Este procedimiento se repite hasta que no se requiere mas intercambios, lo que indica que la lista se encuentra ordenada.
+
+<div align="left">
+  <h4>Moviendo el mayor</h4>
+</div>
+
+<div align="center"> 
+  <img src="readme_img/BubbleSort_mayor.gif" width="">
+</div>
+
+
+<div align="left">
+  <h4>Moviendo el menor</h4>
+</div>
+
+<div align="center"> 
+  <img src="readme_img/BubbleSort_menor.gif" width="">
+</div>
+
+En la siguiente [practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/ordenamiento_burbuja.py) se muestra el algoritmo de ordenamiento burbuja. 
+
 ### Ordenamiento por inserción
 
 ### Ordenamiento por mezcla
