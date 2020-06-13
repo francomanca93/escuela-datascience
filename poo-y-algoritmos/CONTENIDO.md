@@ -490,6 +490,46 @@ En la siguiente [practica](https://github.com/francomanca93/Escuela-DataScience/
 
 La búsqueda binaria es computada en el peor de los casos en un tiempo logarítmico, realizando **O(log n)** comparaciones, donde n es el número de elementos del arreglo y log es el logaritmo. La búsqueda binaria requiere solamente O(1) en espacio, es decir, que el espacio requerido por el algoritmo es el mismo para cualquier cantidad de elementos en el array.
 
+### Busqueda binaria vs busqueda lineal
+En los siguientes gif's se muestran los mejores casos, caso promedio y peor caso de busqueda binaria y lineal, comparando ambos. 
+
+<div align="left">
+  <h4>Mejor de los Casos</h4>
+</div>
+
+<div align="center"> 
+  <img src="readme_img/linear-vs-binary-search-best-case.gif" width="">
+</div>
+
+
+<div align="left">
+  <h4>Caso Promedio</h4>
+</div>
+
+<div align="center"> 
+  <img src="readme_img/linear-vs-binary-search-promedial-case.gif" width="">
+</div>
+
+
+<div align="left">
+  <h4>Peor de los Casos</h4>
+</div>
+
+<div align="center"> 
+  <img src="readme_img/linear-vs-binary-search-worst-case.gif" width="">
+</div>
+
+<div align="left">
+  <h4>Tamaño de una lista contra Numero de pasos</h4>
+</div>
+
+En el siguiente gráfico se puede observar una comparativa entre el algoritmo de busqueda lineal y binaria, donde se analiza el numero de pasos que debe realizar el algoritmo en función del tamaño de la lista.
+
+<div align="center"> 
+  <img src="readme_img/lineal-vs-binario-grafico.jpg" width="">
+</div>
+
+
 ### Ordenamiento de burbuja
 
 ### Ordenamiento por inserción
