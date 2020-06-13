@@ -482,6 +482,13 @@ La [**búsqueda lineal**](https://es.wikipedia.org/wiki/B%C3%BAsqueda_lineal) o 
 En la siguiente [práctica](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/busqueda_lineal.py) se observa el algoritmo escrito. Analizando al mismo ¿Cuál es el peor caso? Si nos fijamos en el [algoritmo](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/busqueda_lineal.py) existe un for loop que crece según el tamaño de la lista, por lo cual nuestro Big O es **O(n)**.
 
 ### Busqueda binaria
+La [búsqueda binaria](https://es.wikipedia.org/wiki/B%C3%BAsqueda_binaria) toma una estrategia llamada "Divide y conquista", la cual consiste en dividir el problema en 2 en cada iteración. Este algoritmo asume que la lista se encuentra ordenada, por lo que es necesario realizar este paso primero.
+
+La búsqueda binaria es uno de los mejores algoritmos que se tienen hoy en día para búsqueda, ya que reduce significativamente el numero de pasos, y así disminuyendo nuestro Big O.
+
+En la siguiente [practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/busqueda_binaria.py) se muestra el algoritmo de busqueda binaria. 
+
+La búsqueda binaria es computada en el peor de los casos en un tiempo logarítmico, realizando **O(log n)** comparaciones, donde n es el número de elementos del arreglo y log es el logaritmo. La búsqueda binaria requiere solamente O(1) en espacio, es decir, que el espacio requerido por el algoritmo es el mismo para cualquier cantidad de elementos en el array.
 
 ### Ordenamiento de burbuja
 
