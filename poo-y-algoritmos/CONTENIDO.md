@@ -595,6 +595,28 @@ En la siguiente [practica](https://github.com/francomanca93/Escuela-DataScience/
 
 
 ## Ambientes virtuales
+Los **ambientes virtuales** permiten aislar el ambiente para poder instalar diversas versiones de paquetes. A partir de python 3 se incluye en la librería estándar en el módulo **venv**. Ningún ingeniero profesional de Python trabaja sin ellos.
+
+[Pip](https://es.wikipedia.org/wiki/Pip_(administrador_de_paquetes)) permite descargar paquetes de terceros para utilizar en nuestro programa, también permite compartir nuestros paquetes con terceros y también podemos definir la versión del paquete que necesitamos.
+
+Para crear un ambiente virtual primer crearemos el directorio para nuestro proyecto. El proyecto se llamará graficando, el cual se utilizará para la siguiente sección.
+
+```py
+>>:~$ mkdir graficado             # Creamos el directorio del proyecto.
+>>:~$ cd graficado/               # Ingresamos al directorio.
+>>:~$ python3 -m venv env         # Creamos un ambiente virtual en env.
+>>:~$ source env/bin/activate     # Activamos el ambiente.
+```
+
+Una vez realizado lo pasos anteriores se ùeden instalar librerías con los siguientes comandos:
+
+```py
+>>:~$ pip install bokeh   # pip install instalara la librería.
+>>:~$ pip freeze          # Con pip freeze veremos que librerías están instaladas.
+```
+
+[Pip](https://pypi.org/) es como una tienda virtual para los desarrolladores e ingenieros de software que utilizan Python. En el siguiente [navegador de proyectos](https://pypi.org/search/) se pueden observar todas las librerias que contiene Pip, y seleccionar la que mas se adecue o lo que necesitamos para nuestro proyecto. 
+
 
 ## Graficar
 
