@@ -555,6 +555,20 @@ En la siguiente [practica](https://github.com/francomanca93/Escuela-DataScience/
 
 ### Ordenamiento por inserción
 
+El algoritmo de [ordenamiento por inserción](https://es.wikipedia.org/wiki/Ordenamiento_por_inserci%C3%B3n) lo que hace es tomar una lista y luego esta es dividida entre una sublista ordenada y otra sublista desordenada. Al principio, la sublista ordenada contiene un solo elemento, por lo que por definición se encuentra ordenada.
+
+A continuación se evalua el primer elemento dentro la sublista desordenada para que podamos insertarlo en el lugar correcto dentro de la lista ordenada.
+
+La inserción se realiza al mover todos los elementos mayores al elemento que se está evauluando un lugar a la derecha.
+
+Continua el proceso hasta que la sublista desordenada quede vacia y, por lo tanto, la lista se encontrará ordenada.
+
+<div align="center"> 
+  <img src="readme_img/Insertion-sort.gif" width="">
+</div>
+
+En la siguiente [practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/ordenamiento_insercion.py) se muestra el algoritmo de ordenamiento por inserción. 
+
 ### Ordenamiento por mezcla
 
 
