@@ -625,6 +625,10 @@ Una vez realizado lo pasos anteriores se ùeden instalar librerías con los sigu
 
 ### ¿Porqué graficar?
 
+Cuando graficamos podemos identificar rapidamente patrones adentro de los datos. Esto se debe a que nosotros como seres humanos gran parte de nuestra corteza cerebral se encuentra diseñada para poder identificar información visual muy rápido. Tambien podemos predecir series cuando las vemos graficadas. 
+
+Con lo anterior descripto simplificamos la interpretación y podemos sacar conclusiones acerca de los datos, ahorrandonos tiempo. 
+
 ### Graficado simple
 
 ## Algoritmos de optimización
