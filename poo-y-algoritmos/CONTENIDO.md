@@ -37,10 +37,13 @@ Objetivos del documento:
     - [Ordenamiento por inserción](#Ordenamiento-por-inserción)
     - [Ordenamiento por mezcla](#Ordenamiento-por-mezcla)
 - [Ambientes virtuales](#Ambientes-virtuales)
-
 - [Graficar](#Graficar)
+    - [¿Porqué graficar?](#¿Porqué-graficar?)
+    - [Graficado simple](#Graficado-simple)
 
 - [Algoritmos de optimización](#Algoritmos-de-optimización)
+    - [Introducción a la optización](#Introducción-a-la-optización)
+    - [El problema del morral](#El-problema-del-morral)
 
 
 
@@ -620,4 +623,12 @@ Una vez realizado lo pasos anteriores se ùeden instalar librerías con los sigu
 
 ## Graficar
 
+### ¿Porqué graficar?
+
+### Graficado simple
+
 ## Algoritmos de optimización
+
+### Introducción a la optización
+
+### El problema del morral
