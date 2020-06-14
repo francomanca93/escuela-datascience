@@ -631,6 +631,10 @@ Con lo anterior descripto simplificamos la interpretación y podemos sacar concl
 
 ### Graficado simple
 
+La librería [Bokeh](http://docs.bokeh.org/en/latest/index.html#) permite construir gráficas complejas de manera rápida y con comandos simples, también nos permite exportar a varios formatos como html, notebooks, imágenes, etc. Bokeh se puede utilizar en el servidor con Flask y Django.
+
+En la siguiente [practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/graficando/graficado_simple.py) podemos observar un graficado simple utilizando Bokeh.
+
 ## Algoritmos de optimización
 
 ### Introducción a la optización
