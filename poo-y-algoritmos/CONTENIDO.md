@@ -571,6 +571,28 @@ En la siguiente [practica](https://github.com/francomanca93/Escuela-DataScience/
 
 ### Ordenamiento por mezcla
 
+El algoritmo de [ordenamiento por mezcla](https://es.wikipedia.org/wiki/Ordenamiento_por_mezcla) (merge sort en inglés) es un algoritmo de ordenamiento externo estable basado en la técnica divide y vencerás. Es de complejidad **O(n log n)**.
+
+Fue desarrollado en 1945 por John Von Neumann.
+
+Conceptualmente, el ordenamiento por mezcla funciona de la siguiente manera:
+
+1. Si la longitud de la lista es 0 ó 1, entonces ya está ordenada. En otro caso:
+2. Dividir la lista desordenada en dos sublistas de aproximadamente la mitad del tamaño.
+3. Ordenar cada sublista recursivamente aplicando el ordenamiento por mezcla.
+4. Mezclar las dos sublistas en una sola lista ordenada.
+
+<div align="center"> 
+  <img src="readme_img/Merge-sort.gif" width="">
+</div>
+
+El ordenamiento por mezcla incorpora dos ideas principales para mejorar su tiempo de ejecución:
+
+1. Una lista pequeña necesitará menos pasos para ordenarse que una lista grande.
+2. Se necesitan menos pasos para construir una lista ordenada a partir de dos listas también ordenadas, que a partir de dos listas desordenadas. Por ejemplo, sólo será necesario entrelazar cada lista una vez que están ordenadas.
+
+En la siguiente [practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/ordenamiento_mezcla.py) se muestra el algoritmo de ordenamiento por mezcla. 
+
 
 ## Ambientes virtuales
 
