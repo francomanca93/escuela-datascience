@@ -639,4 +639,6 @@ En la siguiente [practica](https://github.com/francomanca93/Escuela-DataScience/
 
 ### Introducción a la optización
 
+El concepto de [optimización](https://es.wikipedia.org/wiki/Optimizaci%C3%B3n_(matem%C3%A1tica)) permite resolver muchos problemas de manera computacional. Cuando pensamos en un algoritmo de optimización debemos definir una función objetivo que debemos maximizar o minimizar, respetando una serie de limitantes que definamos, o sea, es la selección del mejor elemento (con respecto a algún criterio) de un conjunto de elementos disponibles.
+
 ### El problema del morral
