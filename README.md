@@ -1,4 +1,11 @@
-# Escuela de Data Science
+
+<div align="center">
+  <h1>Escuela de Data Science</h1>
+</div>
+
+<div align="center"> 
+  <img src="readme_img/escuela-data-science.jpg" width="150">
+</div>
 
 El siguiente repositorio busca ser un lugar donde llevar un registro con notas acerca de los cursos implantados en dos learning path de [Platzi](https://platzi.com/). Los mismos son:
 - [Escuela de Data Science](https://platzi.com/datos/)
@@ -8,3 +15,4 @@ El siguiente repositorio busca ser un lugar donde llevar un registro con notas a
 La siguiente tabla de contenido dirige a cada uno de los contenidos de los cursos:
 - [Introducción al pensamiento computacional con Python](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/CONTENIDO.md)
 - [Programación orientada a objetos y algoritmos con Python](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/CONTENIDO.md)
+- [Programación Dinámica y Estocástica con Python](https://github.com/francomanca93/Escuela-DataScience/blob/master/programacion-dinamica-y-estocastica/CONTENIDO.md)
