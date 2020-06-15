@@ -642,3 +642,9 @@ En la siguiente [practica](https://github.com/francomanca93/Escuela-DataScience/
 El concepto de [optimización](https://es.wikipedia.org/wiki/Optimizaci%C3%B3n_(matem%C3%A1tica)) permite resolver muchos problemas de manera computacional. Cuando pensamos en un algoritmo de optimización debemos definir una función objetivo que debemos maximizar o minimizar, respetando una serie de limitantes que definamos, o sea, es la selección del mejor elemento (con respecto a algún criterio) de un conjunto de elementos disponibles.
 
 ### El problema del morral
+
+[El problema de la mochila o del morral](https://es.wikipedia.org/wiki/Problema_de_la_mochila): Imagina que eres un ladrón que entra a un museo pero tienes un gran problema, nada mas tienes una mochila pero hay muchísimas cosas mas de las que puedes cargar, por lo cual debes determinar cuales artículos puedes cargar y te entregaran el mayor valor posible.
+
+Para este problema sabemos que no podemos dividir los artículos, por lo que nuestra primera aproximación sera evaluar los artículos.
+
+En la siguiente [practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/morral.py) tenemos el codigo resolviendo un caso simple del problema del morral.
