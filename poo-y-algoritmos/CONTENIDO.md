@@ -647,4 +647,8 @@ El concepto de [optimización](https://es.wikipedia.org/wiki/Optimizaci%C3%B3n_(
 
 Para este problema sabemos que no podemos dividir los artículos, por lo que nuestra primera aproximación sera evaluar los artículos.
 
+<<<<<<< HEAD
 En la siguiente [practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/morral.py) tenemos el codigo resolviendo un caso simple del problema del morral.
+=======
+En la siguiente [practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/graficando/morral.py) tenemos el codigo resolviendo un caso simple del problema del morral.
+>>>>>>> b6e34acbc59cd371172147ac7f655d2118169c5c
