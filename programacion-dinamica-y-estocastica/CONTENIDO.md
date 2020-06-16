@@ -64,7 +64,20 @@ También nos podemos encontrar con los **problemas empalmados**, los cuales impl
 
 Una técnica para obtener una alta velocidad en nuestro programa es la Memorización, el cual consiste en guardar cómputos previos y evitar realizarlos nuevamente. Normalmente se utiliza un diccionario, donde las consultas se pueden hacer en O(1), y para ello hacemos un cambio de tiempo por espacio.
 
-###      Optimización de Fibonacci
+### Optimización de Fibonacci
+
+La serie de _Fibonacci_ se representa como `Fn = Fn-1 + Fn-2` y es muy simple implementarla de forma recursiva en código. Sin embargo es muy ineficiente hacerlo simplemente recursivo, ya que repetimos varias veces el mismo computo.
+
+<div align="center"> 
+  <img src="readme_img/FibbonacciRecurisive.png" width="">
+  <p>Algoritmo de Fibonnaci</p>
+</div>
+
+Si te fijas en la imagen te darás cuenta de que repetimos varias veces el calculo para `f(4), f(3), f(2), f(1) y f(0)`, esto significa que nuestro algoritmo crece de forma **exponencial** `O(2^n)`.
+
+Para optimizar nuestro algoritmo implementaremos en primer lugar la **función recursiva** para luego dar paso a la **memorización**, con esto las mejoras serán realmente sorprendentes.
+
+En la siguiente [practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/programacion-dinamica-y-estocastica/programacion_dinamica.py)
 
 ## Caminos Aleatorios
 ###      ¿Qué son los caminos aleatorios
