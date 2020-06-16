@@ -1,4 +1,11 @@
-# Introducción al Pensamiento Computacional con Python
+<div align="center">
+  <h1>Introducción al Pensamiento Computacional con Python
+</h1>
+</div>
+
+<div align="center"> 
+  <img src="readme_img/python.png" width="">
+</div>
 
 El contenido de este documento busca ser una guía a través de los conceptos del pensamiento computacional. El mismo está dictado por [David Aroesti](https://github.com/jdaroesti) del team Platzi.
 
@@ -66,7 +73,18 @@ Deficion programatica: Funcion que se llama a si misma.
 
 Aplicando recusividad
 - [Factorial](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/factoriales.py)
+
+<div align="center"> 
+  <img src="readme_img/factorial-code-animation.gif" width="">
+</div>
+
 - [Fibonacci](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/fibonacci.py)
+
+<div align="center"> 
+  <img src="readme_img/fibonacci-recursion-demonstration-animation-python.gif
+" width="">
+</div>
+
 
 
 ## Tipos estructurados, mutabilidad y funciones de alto nivel
