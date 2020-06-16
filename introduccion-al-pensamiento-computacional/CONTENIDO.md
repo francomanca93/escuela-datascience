@@ -81,7 +81,7 @@ Aplicando recusividad
 - [Fibonacci](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/fibonacci.py)
 
 <div align="center"> 
-  <img src="readme_img/fibonacci-recursion-demonstration-animation-python.gif
+  <img src="readme_img/fibonacci-animation-python.gif
 " width="">
 </div>
 
