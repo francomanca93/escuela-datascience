@@ -84,8 +84,6 @@ Aplicando recusividad
   <img src="readme_img/fibonacci-animation-python.gif" width="">
 </div>
 
-
-
 ## Tipos estructurados, mutabilidad y funciones de alto nivel
 
 #### Funciones como objetos
