@@ -110,6 +110,59 @@ Ejemplo en diferentes ciencias donde se se observan los caminos aleatorios:
 
 ###      Camino de Borrachos
 
+Este es un ejercicio donde empezando desde un punto 0 aleatoriamente podemos decidir que dirección tomar, dependiendo de las opciones establecidas.
+
+Para realizar un ejemplo de aleatoriedad vamos a crear un programa que representara el problema del "Camino de Borrachos". Crearemos 3 clases: 
+
+- [Borracho](https://github.com/francomanca93/Escuela-DataScience/blob/master/programacion-dinamica-y-estocastica/camino_de_borrachos/borracho.py): Representa al agente que camina.
+
+- [Coordenada](https://github.com/francomanca93/Escuela-DataScience/blob/master/programacion-dinamica-y-estocastica/camino_de_borrachos/coordenada.py): Genera una abstracción de las coordenadas.
+
+- [Campo](https://github.com/francomanca93/Escuela-DataScience/blob/master/programacion-dinamica-y-estocastica/camino_de_borrachos/campo.py): Representa el plano en el cual nos estamos moviendo.
+
+Con esto luego vamos a graficar la distancia en la que termina nuestro agente a medida que definimos una mayor cantidad de pasos que puede dar en nuestra archivo principal [camino_aleatorio](https://github.com/francomanca93/Escuela-DataScience/blob/master/programacion-dinamica-y-estocastica/camino_de_borrachos/camino_aleatorio.py). 
+
+Para realizar todo esto debemos crear un ambiente virtual para utlizar finalmente la libreria bokeh que nos permitira graficar:
+
+```py
+mkdir camino_de_borramos    # Creamos una carpeta para nuestro proyecto.
+cd camino_de_borrachos      # Ingresamos a la carpeta.
+python3 -m venv env         # Creamos nuestro ambiente virtual.
+source env/bin/activate     # Activamos nuestro ambiente.
+pip install bokeh           # Instalamos el paquete de bokeh para generar nuestra gráfica.
+
+```
+
+Dentro el pensamiento estocástico debemos realizar varias simulaciones, por ese motivo en el ejemplo anterior realizamos varios intentos. Lo importante de esta aleatoriedad es que podemos distribuirla a lo largo de varios intentos, con esto podemos obtener certeza de que el comportamiento de nuestro programa se comporte en que esperamos estadísticamente.
+
+```
+# Como salida tenemos:
+
+BorrachoTradicional caminata aleatorio de 10 pasos
+Media = 2.814
+Maxima = 7.1
+Minima = 0.0
+BorrachoTradicional caminata aleatorio de 100 pasos
+Media = 9.621
+Maxima = 29.7
+Minima = 0.0
+BorrachoTradicional caminata aleatorio de 1000 pasos
+Media = 30.506
+Maxima = 63.7
+Minima = 3.2
+BorrachoTradicional caminata aleatorio de 10000 pasos
+Media = 95.481
+Maxima = 269.6
+Minima = 18.6
+```
+
+Con la siguiente gráfica generada:
+
+<div align="center"> 
+  <img src="readme_img/bokeh_plot.png" width="">
+  <p>Caminos aleatorios</p>
+</div>
+
 ## Programas Estocásticos
 ###     Introducción a la Programación Estocástica
 ###     Cálculo de Probabilidades
