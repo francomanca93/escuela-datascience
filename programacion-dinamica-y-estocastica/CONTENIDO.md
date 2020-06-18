@@ -135,7 +135,7 @@ pip install bokeh           # Instalamos el paquete de bokeh para generar nuestr
 
 Dentro el pensamiento estocástico debemos realizar varias simulaciones, por ese motivo en el ejemplo anterior realizamos varios intentos. Lo importante de esta aleatoriedad es que podemos distribuirla a lo largo de varios intentos, con esto podemos obtener certeza de que el comportamiento de nuestro programa se comporte en que esperamos estadísticamente.
 
-```py
+```
 # Como salida tenemos:
 
 BorrachoTradicional caminata aleatorio de 10 pasos
@@ -165,6 +165,13 @@ Con la siguiente gráfica generada:
 
 ## Programas Estocásticos
 ###     Introducción a la Programación Estocástica
+
+En un [programa determinístico](https://es.wikipedia.org/wiki/Algoritmo_determinista) si se conocen las entradas del algoritmo siempre producirá la misma salida, y la máquina interna pasará por la misma secuencia de estados. Este tipo de algoritmos ha sido el más estudiado durante la historia y por lo tanto resulta ser el tipo más familiar de los algoritmos, así como el más práctico ya que puede ejecutarse en las máquinas eficientemente. 
+
+Los programas determinísticos son muy importantes, pero existen problemas que no pueden resolverse de esa manera.
+
+La programación [estocástica](https://es.wikipedia.org/wiki/Proceso_estoc%C3%A1stico) permite introducir aleatoriedad a nuestros programas para crear simulaciones que permiten resolver otro tipo de problemas. Los programas estocásticos se aprovechan de que las distribuciones probabilísticas de un problema se conocen o pueden ser estimadas.
+
 ###     Cálculo de Probabilidades
 ###     Simulación de Probabilidades
 ###     Inferencia Estadística
