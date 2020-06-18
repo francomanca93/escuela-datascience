@@ -173,6 +173,62 @@ Los programas determinísticos son muy importantes, pero existen problemas que n
 La programación [estocástica](https://es.wikipedia.org/wiki/Proceso_estoc%C3%A1stico) permite introducir aleatoriedad a nuestros programas para crear simulaciones que permiten resolver otro tipo de problemas. Los programas estocásticos se aprovechan de que las distribuciones probabilísticas de un problema se conocen o pueden ser estimadas.
 
 ###     Cálculo de Probabilidades
+
+La [**probabilidad**](https://es.wikipedia.org/wiki/Probabilidad) es una medida de la certidumbre asociada a un evento o suceso futuro y suele expresarse como un número entre 0 y 1.
+
+Una probabilidad de 0 significa que un suceso jamás sucederá, y en su contraparte una probabilidad de 1 significa que está garantizado que sucederá.
+
+Al hablar de probabilidad preguntamos qué fracción de todos los posibles eventos tiene la propiedad que buscamos, por eso es importante poder calcular todas las posibilidades de un evento para entender su probabilidad. La probabilidad de que un evento suceda y de que no suceda es siempre 1.
+
+Si A y B son eventos separados podemos analizar las leyes basicas de la probabilidad:
+
+- Ley del complemento:
+    
+      P(A) + P(~A) = 1
+
+Lo anterior se lee: La probabilidad de que **ocurra el evento A** mas la probabilidad de que **NO ocurra el evento A** es igual a 1.
+
+- Ley multiplicativa:
+  
+      P(A y B) = P(A) * P(B)
+
+Lo anterior se lee: La probabilidad de que **ocurra el evento A y B** es igual al producto de las probabilidades de cada evento por separado.
+
+- Ley aditiva:
+  - Mutuamente exclusivos: 
+  
+        P(A o B) = P(A) + P(B)
+    
+Lo anterior se lee: La probabilidad de que **ocurra el evento A o B** es igual a la suma de las probabilidades de cada evento por separado.
+
+  - No exclusivos: 
+  
+        P(A o B) = P(A) + P(B) - P(A y B)
+
+
+Para ver un ejemplo práctico de las leyes anteriores vamos a realizar un ejercicio de el lanzamiento de un dado de 6 caras:
+
+- La probabilidad de que salga el número 1:
+
+Tenemos 6 posibilidades y el número 1 es una de ellas, por lo que la probabilidad es 1/6.
+
+- La probabilidad de que nos toque el numero 1 o 2:
+
+Tenemos 6 posibilidades y el número 1 es una de ellas y el 2 es otra. El que nos toque un número es mutuamente exclusivo, ya que no podemos obtener 2 números al mismo tiempo. Bajo esta premisa utilizaremos la ley aditiva mutuamente exclusiva.
+
+    P(1 o 2) = P(1) + P(2)
+
+    P(1 o 2) = 1/6 + 1/6
+
+    P(1 o 2) = 2/6
+
+- La probabilidad de que nos salga el número 1 al menos 1 vez en 10 lanzamientos:
+
+    Para cada lanzamiento tenemos la posibilidad de 1/6 de que nos toque 1, por lo que utilizamos la ley multiplicativa.
+
+      (1/6)^10 = 0.8333
+
+
 ###     Simulación de Probabilidades
 ###     Inferencia Estadística
 ###     Media
