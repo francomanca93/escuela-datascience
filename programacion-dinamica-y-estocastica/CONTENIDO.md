@@ -135,7 +135,7 @@ pip install bokeh           # Instalamos el paquete de bokeh para generar nuestr
 
 Dentro el pensamiento estocástico debemos realizar varias simulaciones, por ese motivo en el ejemplo anterior realizamos varios intentos. Lo importante de esta aleatoriedad es que podemos distribuirla a lo largo de varios intentos, con esto podemos obtener certeza de que el comportamiento de nuestro programa se comporte en que esperamos estadísticamente.
 
-```
+```py
 # Como salida tenemos:
 
 BorrachoTradicional caminata aleatorio de 10 pasos
