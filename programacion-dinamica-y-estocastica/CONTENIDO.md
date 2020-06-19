@@ -234,6 +234,48 @@ Tenemos 6 posibilidades y el número 1 es una de ellas y el 2 es otra. El que no
 En la siguiente [práctica](https://github.com/francomanca93/Escuela-DataScience/blob/master/programacion-dinamica-y-estocastica/probabilidades.py) crearemos un ejemplo de lanzar un dado de 6 caras, esto con el objetivo de obtener la distribución de probabilidades y acercarnos al numero correcto, aplicando la **ley de los grandes números**.
 
 ###     Inferencia Estadística
+
+Con las simulaciones podemos calcular las probabilidades de eventos complejos sabiendo las probabilidades de eventos simples.
+
+¿Que pasa cuando no sabemos las probabilidades de los eventos simples? 
+
+Podemos aplicar las técnicas de la [inferencia estadística](https://es.wikipedia.org/wiki/Estad%C3%ADstica_inferencial) la cual nos permiten inferir/concluir las propiedades de una población a partir de una muestra aleatoria.
+
+>"El principio guía de la inferencia estadística es que una muestra aleatoria tiende a exhibir las mismas propiedades que la población de la cual fue extraída." - John Guttag
+
+<div align="center"> 
+  <img src="readme_img/estadistica-inferencial.jpeg" width="">
+  <p>Inferencia estadística</p>
+</div>
+
+Sabiendo esto vemos que la estadística se clasifica en dos tipos. 
+
+<div align="center"> 
+  <img src="readme_img/descriptiva-vs-inferencial.jpg" width="">
+  <p>Inferencia estadística</p>
+</div>
+
+#### Ley de los grandes números
+
+Con la ley de los grandes números podemos ver que en pruebas independientes repetidas con la misma probabilidad p de un resultado, la fracción de desviaciones de p converge a cero conforme la cantidad de pruebas se acerca al infinito.
+
+
+<img src="https://latex.codecogs.com/gif.latex?P(\lim_{n&space;\to&space;\infty&space;}&space;\bar{X}_{n}&space;=&space;\mu&space;)&space;=&space;1">
+
+#### Falacia del apostador
+
+La [**falacia del apostador**](https://es.wikipedia.org/wiki/Falacia_del_apostador) una falacia lógica por la que se cree erróneamente que los sucesos pasados afectan a los futuros en lo relativo a actividades aleatorias, como en muchos juegos de azar. Puede comprender las siguientes ideas equivocadas:
+
+- Un suceso aleatorio tiene **más** probabilidad de ocurrir porque **no** ha ocurrido durante cierto período.
+- Un suceso aleatorio tiene **menos** probabilidad de ocurrir porque ha ocurrido durante cierto período.
+- Un suceso aleatorio tiene **más** probabilidad de ocurrir si **no ocurrió recientemente**.
+- Un suceso aleatorio tiene **menos** probabilidad de ocurrir **si ocurrió recientemente.**
+
+Las anteriores son ideas equivocadas que surgen cotidianamente en razonamientos sobre probabilidades, muchos de los cuales se han estudiado con gran profundidad. Mucha gente pierde dinero apostando debido a su creencia errónea en esta falacia. 
+
+**La regresion a la media señala que después de un evento aleatorio extremo, el siguiente evento probablemente será menos extremo.**
+
+
 ###     Media
 ###     Varianza y Desviación Estándar
 ###     Distribución Normal
