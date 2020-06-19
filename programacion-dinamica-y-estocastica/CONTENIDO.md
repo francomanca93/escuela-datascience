@@ -260,7 +260,10 @@ Sabiendo esto vemos que la estadística se clasifica en dos tipos.
 Con la ley de los grandes números podemos ver que en pruebas independientes repetidas con la misma probabilidad p de un resultado, la fracción de desviaciones de p converge a cero conforme la cantidad de pruebas se acerca al infinito.
 
 
-<img src="https://latex.codecogs.com/gif.latex?P(\lim_{n&space;\to&space;\infty&space;}&space;\bar{X}_{n}&space;=&space;\mu&space;)&space;=&space;1">
+<div align="center"> 
+  <img src="readme_img/ley-de-grandes-numeros.png" width="40%">
+  <p><b>Ley de los grandes números</b></p>
+</div>
 
 #### Falacia del apostador
 
@@ -275,8 +278,30 @@ Las anteriores son ideas equivocadas que surgen cotidianamente en razonamientos 
 
 **La regresion a la media señala que después de un evento aleatorio extremo, el siguiente evento probablemente será menos extremo.**
 
-
 ###     Media
+
+La [**media**](https://es.wikipedia.org/wiki/Media_aritm%C3%A9tica) es una medida de tendencia central, comúnmente conocido como promedio. La media de una población se denota con el símbolo μ y la media de una muestra se define con X̄.
+
+<div align="center"> 
+  <img src="readme_img/promedio.png" width="60%">
+  <p><b>Promedio</b></p>
+</div>
+
+En el siguiente código calculamos la media.
+```py
+import random
+
+def media(X):
+    return sum(X) / len(X)
+
+if __name__ == '__main__':
+    X = [random.randint(0, 20) for i in range(20)] 
+    mu = media(X)
+
+    print(X)
+    print(mu)
+```
+
 ###     Varianza y Desviación Estándar
 ###     Distribución Normal
 
