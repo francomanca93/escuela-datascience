@@ -230,6 +230,9 @@ Tenemos 6 posibilidades y el número 1 es una de ellas y el 2 es otra. El que no
 
 
 ###     Simulación de Probabilidades
+
+En la siguiente [práctica](https://github.com/francomanca93/Escuela-DataScience/blob/master/programacion-dinamica-y-estocastica/probabilidades.py) crearemos un ejemplo de lanzar un dado de 6 caras, esto con el objetivo de obtener la distribución de probabilidades y acercarnos al numero correcto, aplicando la **ley de los grandes números**.
+
 ###     Inferencia Estadística
 ###     Media
 ###     Varianza y Desviación Estándar
