@@ -303,6 +303,57 @@ if __name__ == '__main__':
 ```
 
 ###     Varianza y Desviación Estándar
+
+La [varianza](https://es.wikipedia.org/wiki/Varianza) mide qué tan propagados se encuentran un conjunto de valores aleatorios de su media. Mientras que la media nos da una idea de dónde se encuentran los valores, la varianza nos dice que tan dispersos se encuentran. La varianza siempre debe entenderse con respecto a la media.
+
+<div align="center"> 
+  <img src="readme_img/varianza.png" width="60%">
+  <p><b>Varianza</b></p>
+</div>
+
+La [desviación estándar](https://es.wikipedia.org/wiki/Desviaci%C3%B3n_t%C3%ADpica) es la raíz cuadrada de la varianza. Nos permite entender, también, la propagación y se debe entender siempre relacionado con la media.
+
+<div align="center"> 
+  <img src="readme_img/desviacion-estandar.png" width="60%">
+  <p><b>Desviación estandar</b></p>
+</div>
+
+La ventaja sobre la varianza es que la desviación estándar está en las mismas unidades que la media.
+
+En el siguiente codigo implementaré las funciones de varianza y desviación estándar en nuestro [script](https://github.com/francomanca93/Escuela-DataScience/blob/master/programacion-dinamica-y-estocastica/estadisticas.py) ya hecho para la media.
+
+```py
+import random
+import math
+
+def media(X):
+    return sum(X) / len(X)
+
+def varianza(X):
+    mu = media(X)
+
+    acumulador = 0
+    for x in X:
+        acumulador += (x - mu)**2
+    
+    return acumulador / len(X)
+
+def desviacion_estandar(X):
+    return math.sqrt(varianza(X))
+
+
+if __name__ == '__main__':
+    X = [random.randint(9, 12) for i in range(20)] 
+    mu = media(X)
+    Var = varianza(X)
+    sigma = desviacion_estandar(X)
+
+    print(f'Arregla X: {X}')
+    print(f'Media = {mu}')
+    print(f'Varianza = {Var}')
+    print(f'Desviacion estandar = {sigma}')
+```
+
 ###     Distribución Normal
 
 ## Simulaciones de Montecarlo
