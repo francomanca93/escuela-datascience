@@ -283,7 +283,7 @@ Las anteriores son ideas equivocadas que surgen cotidianamente en razonamientos 
 La [**media**](https://es.wikipedia.org/wiki/Media_aritm%C3%A9tica) es una medida de tendencia central, comúnmente conocido como promedio. La media de una población se denota con el símbolo μ y la media de una muestra se define con X̄.
 
 <div align="center"> 
-  <img src="readme_img/promedio.png" width="60%">
+  <img src="readme_img/promedio.png" width="40%">
   <p><b>Promedio</b></p>
 </div>
 
@@ -307,14 +307,14 @@ if __name__ == '__main__':
 La [varianza](https://es.wikipedia.org/wiki/Varianza) mide qué tan propagados se encuentran un conjunto de valores aleatorios de su media. Mientras que la media nos da una idea de dónde se encuentran los valores, la varianza nos dice que tan dispersos se encuentran. La varianza siempre debe entenderse con respecto a la media.
 
 <div align="center"> 
-  <img src="readme_img/varianza.png" width="60%">
+  <img src="readme_img/varianza.png" width="40%">
   <p><b>Varianza</b></p>
 </div>
 
 La [desviación estándar](https://es.wikipedia.org/wiki/Desviaci%C3%B3n_t%C3%ADpica) es la raíz cuadrada de la varianza. Nos permite entender, también, la propagación y se debe entender siempre relacionado con la media.
 
 <div align="center"> 
-  <img src="readme_img/desviacion-estandar.png" width="60%">
+  <img src="readme_img/desviacion-estandar.png" width="40%">
   <p><b>Desviación estandar</b></p>
 </div>
 
@@ -355,6 +355,54 @@ if __name__ == '__main__':
 ```
 
 ###     Distribución Normal
+
+La [**distribución normal**](https://es.wikipedia.org/wiki/Distribuci%C3%B3n_normal) es una de las distribuciones mas recurrentes en cualquier ámbito. Se define completamente por su media y su desviación estándar. Permite calcular intervalos de confianza con la regla empírica.
+
+<div align="center"> 
+  <img src="readme_img/distribucion-normal.png" width="40%">
+  <p><b>Distribución normal</b></p>
+</div>
+
+
+Cuando graficamos la función de densidad de probabilidad vemos que es totalmente simétrica rescpecto a la **media**. 
+
+En el siguiente ejemplo vamos unas distribuciones con medias 0 y desviación estándar 0.2, 1 y 5, excepto una que se modifico la media a -2 y distribución estandar 0.5.
+
+Cuando la desviación es baja significa la variabilidad o dispersión de los datos es menor.
+
+
+<div align="center"> 
+  <img src="readme_img/Normal_distribution.png" width="100%">
+  <p><b>Función de densidad de probabilidad</b></p>
+</div>
+
+Ejemplo de donde podría utilizarse esto:
+- Inversion: Cuando se analizar una inversión se desea saber la **media de retorno** de la misma y la **desviación estandar** nos va a decir el riesgo de la inversión.
+  - Si tiene una **media de rotorno** elevada y una **desviación estándar** pequeña será una inversión **segura**.
+  - Si tienes la misma **media de retorno** elevada pero con una **disviación estándar** alta, podemos decir que nuestra inversión será mas riesgosa.
+De esta forma evaluamos si aceptamos el riesgo o no
+
+
+#### Regla empírica
+
+También conocida como la **regla 68-95-99.7**. Señala cuál es la dispersión de los datos en una distribución normal a **uno, dos y tres sigmas**. Hay que tener en cuenta que los 2 extremos de la grafica tendrán un comportamiento similar.
+
+Tambien permite calcular probabilidades con la densidad de la distribución normal.
+
+<div align="center"> 
+  <img src="readme_img/regla-empirica.png" width="40%">
+  <p><b>Regla empírica</b></p>
+</div>
+
+<div align="center"> 
+  <img src="readme_img/Empirical_rule_histogram.svg.png" width="">
+  <p><b>Histograma de desviación estandar</b></p>
+</div>
+
+<div align="center"> 
+  <img src="readme_img/Standard_deviation_diagram.svg" width="">
+  <p><b>Diagrama de desviación estandar</b></p>
+</div>
 
 ## Simulaciones de Montecarlo
 ###     ¿Qué son las Simulaciones de Montecarlo?
