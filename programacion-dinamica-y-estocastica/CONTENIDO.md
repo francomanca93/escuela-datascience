@@ -36,6 +36,8 @@ El contenido de este documento son apuntes del [Curso de Programación Dinámica
     - [Distribución Normal](#Distribución-Normal)
 - [Simulaciones de Montecarlo](#Simulaciones-de-Montecarlo)
     - [¿Qué son las Simulaciones de Montecarlo?](#¿Qué-son-las-Simulaciones-de-Montecarlo?)
+      - [Origen](#Origen)
+      - [Simulaciones de montecarlo](#Simulaciones-de-montecarlo)
     - [Simulación de Barajas](#Simulación-de-Barajas)
     - [Cálculo de PI](#Cálculo-de-PI)
 - [Muestreo e Intervalos de Confianza](#Muestreo-e-Intervalos-de-Confianza)
@@ -372,7 +374,7 @@ Cuando la desviación es baja significa la variabilidad o dispersión de los dat
 
 
 <div align="center"> 
-  <img src="readme_img/Normal_distribution.png" width="100%">
+  <img src="readme_img/Normal_distribution.png" width="60%">
   <p><b>Función de densidad de probabilidad</b></p>
 </div>
 
@@ -406,6 +408,37 @@ Tambien permite calcular probabilidades con la densidad de la distribución norm
 
 ## Simulaciones de Montecarlo
 ###     ¿Qué son las Simulaciones de Montecarlo?
+
+#### Origen
+La [invención del método](https://es.wikipedia.org/wiki/M%C3%A9todo_de_Montecarlo#Or%C3%ADgenes_del_m%C3%A9todo) se las asigna a [Stanislaw Ulam](https://es.wikipedia.org/wiki/Stanis%C5%82aw_Ulam) y a [John von Neumann](https://es.wikipedia.org/wiki/John_von_Neumann). 
+
+
+<div align="center"> 
+  <img src="readme_img/stanislaw-ulam.jpg" width="50%">
+  <p><b>Stanislaw Ulam</b></p>
+
+<img src="readme_img/von-neuman.jpeg" width="50%">
+  <p><b>John von Neumann</b></p>
+
+</div>
+
+Ulam aburrido y enfermo en su casa queria calcular la probabilidad de cual era el juego perfecto del solitario y saber cuando podia ganar o perder. Sabiendo que calcular con lapiz y papel le iba a llevar mucho tiempo, llamo a su amigo Von Neumann para poder usar la computadora [ENIAC](https://es.wikipedia.org/wiki/ENIAC) y desarrollar la simulación. 
+
+<div align="center"> 
+  <img src="readme_img/von-neuman-y-ENIAC.jpg" width="70%">
+  <p><b>Stanislaw Ulam</b></p>
+</div>
+
+Desarrollando la modelación se dieron cuenta que estaban llegando a aproximaciones muy reales del solitario. Con esto quiseron modelar los juegos de azar de Montecarlo. De aca se le atribuye el nombre de [simulaciones de Montecarlo](https://es.wikipedia.org/wiki/M%C3%A9todo_de_Montecarlo). 
+
+No solo modelaron juegos de casino si no que tambien lo utilizaron para el [proyecto Manhattan](https://es.wikipedia.org/wiki/Proyecto_Manhattan). Hicieron simulaciones probabilisticas para saber que podría suceder con las bombas que se estaban desarrollando. 
+
+#### Simulaciones de montecarlo
+
+Permite crear simulaciones para predecir el resultado de un problema, además de convertir problemas determinísticos en problemas estocásticos.
+
+Es utilizado en gran diversidad de áreas, desde la ingeniería hasta la biología y el derecho.
+
 ###     Simulación de Barajas
 ###     Cálculo de PI
 
