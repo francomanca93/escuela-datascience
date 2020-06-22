@@ -414,10 +414,10 @@ La [invención del método](https://es.wikipedia.org/wiki/M%C3%A9todo_de_Monteca
 
 
 <div align="center"> 
-  <img src="readme_img/stanislaw-ulam.jpg" width="50%">
+  <img src="readme_img/stanislaw-ulam.jpg" width="30%">
   <p><b>Stanislaw Ulam</b></p>
 
-<img src="readme_img/von-neuman.jpeg" width="50%">
+<img src="readme_img/von-neuman.jpeg" width="30%">
   <p><b>John von Neumann</b></p>
 
 </div>
@@ -425,7 +425,7 @@ La [invención del método](https://es.wikipedia.org/wiki/M%C3%A9todo_de_Monteca
 Ulam aburrido y enfermo en su casa queria calcular la probabilidad de cual era el juego perfecto del solitario y saber cuando podia ganar o perder. Sabiendo que calcular con lapiz y papel le iba a llevar mucho tiempo, llamo a su amigo Von Neumann para poder usar la computadora [ENIAC](https://es.wikipedia.org/wiki/ENIAC) y desarrollar la simulación. 
 
 <div align="center"> 
-  <img src="readme_img/von-neuman-y-ENIAC.jpg" width="70%">
+  <img src="readme_img/von-neuman-y-ENIAC.jpg" width="50%">
   <p><b>Stanislaw Ulam</b></p>
 </div>
 
@@ -440,6 +440,22 @@ Permite crear simulaciones para predecir el resultado de un problema, además de
 Es utilizado en gran diversidad de áreas, desde la ingeniería hasta la biología y el derecho.
 
 ###     Simulación de Barajas
+
+Con la simulaciones de Montecarlo podemos simular un juego de cartas. En este caso, obtener las probabilidades de algun juego especifico. 
+
+Nuestro juego será el [Poker](https://es.wikipedia.org/wiki/P%C3%B3quer). Antes de simular tenemos que saber de como se compone el [naipe francés](https://es.wikipedia.org/wiki/Baraja_francesa) y cuales son las posibles combinaciones de cartas del poker.
+
+<div align="center"> 
+  <img src="readme_img/naipe-frances.jpg" width="80%">
+  <p><b>Naipe Francés</b></p>
+
+<img src="readme_img/poker-combinaciones.png" width="50%">
+  <p><b>Combinacion de cartas de Poker</b></p>
+
+</div>
+
+En el [siguiente código](https://github.com/francomanca93/Escuela-DataScience/blob/master/programacion-dinamica-y-estocastica/barajas.py) podemos calcular las probabilidades de los juegos. En este caso solo se realizo la simulación para el cálculo de la probabilidad de par, escalera y escalera de color. 
+
 ###     Cálculo de PI
 
 ## Muestreo e Intervalos de Confianza
