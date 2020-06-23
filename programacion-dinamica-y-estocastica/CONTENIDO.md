@@ -578,3 +578,33 @@ Los datos experimentales son aquellos que se generan a través del [método cien
 </div>
 
 ###     Regresión Lineal
+La [regresión lineal](https://es.wikipedia.org/wiki/Regresi%C3%B3n_lineal) nos permite aproximar una función a un conjunto de datos obtenidos de manera experimental. No necesariamente permite aproximar funciones lineales, sino que sus variantes permiten aproximar cualquier función polinómica.
+
+```py
+import numpy as np
+x = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8])
+y = np.array([1, 2, 3, 5, 4, 6, 8, 7, 9])
+
+coeffs = np.polyfit(x, y, 1)
+print(coeffs)
+```
+```
+# Salida del código
+[0.96666667 1.13333333]
+```
+
+```py
+m = coeffs[0]
+b = coeffs[1]
+est_y = (m * x) + b
+
+import matplotlib.pyplot as plt
+plt.plot(x, est_y)
+plt.scatter(x, y)
+plt.show()
+```
+
+<div align="center"> 
+  <img src="readme_img/regresion-lineal.png" width="70%">
+  <p><b>Regresión lineal</b></p>
+</div>
