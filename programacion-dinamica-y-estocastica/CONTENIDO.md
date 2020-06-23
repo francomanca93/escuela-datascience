@@ -608,3 +608,10 @@ plt.show()
   <img src="readme_img/regresion-lineal.png" width="70%">
   <p><b>Regresión lineal</b></p>
 </div>
+
+### Conclusiones
+
+- La programación dinámica permite optimizar problemas que tienen subestructura optima y subproblemas empalmados.
+- Las computadoras pueden resolver problemas determinísticos y estocásticos.
+- Podemos generar simulaciones computacionales para responder preguntas del mundo real. 
+- La inferencia estadística nos permite tener confianza de que nuestras simulaciones arrojan resultados válidos.
