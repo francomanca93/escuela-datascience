@@ -549,6 +549,20 @@ En un **muestreo estratificado** tomamos en consideración las características 
 
 ###     Teorema del Límite Central
 
+El [teorema del límite central](https://es.wikipedia.org/wiki/Teorema_del_l%C3%ADmite_central) es uno de los teoremas más importantes de la estadística. Establece que mientras mas **muestras aleatorias** obtengamos de cualquier distribución estas van a tender a una **distribución normal**. Mientras la muestra sea de mayor tamaño, la desviación estándar será menor.
+
+Esto permite entender cualquier distribución como la distribución normal de sus medias y eso nos permite aplicar todo lo que sabemos de distribuciones normales.
+
+<div align="center"> 
+  <img src="readme_img/central-limit-theorem.jpg" width="80%">
+  <p><b></b></p>
+
+<img src="readme_img/central-limit-theorem-varios.png" width="50%">
+  <p><b>Varios ejemplos del Teorema del limite central</b></p>
+
+</div>
+
+
 ## Datos Experimentales
 ###     ¿Cómo trabajar con datos experimentales?
 ###     Regresión Lineal
