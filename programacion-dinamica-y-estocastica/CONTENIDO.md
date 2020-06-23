@@ -458,6 +458,85 @@ En el [siguiente código](https://github.com/francomanca93/Escuela-DataScience/b
 
 ###     Cálculo de PI
 
+Explicación de la metodología del [cálculo de Pi con el Método de Montecarlo](https://youtu.be/DQ5qqHukkAc?t=149) en Youtube por [QuantumFracture](https://www.youtube.com/channel/UCbdSYaPD-lr1kW27UJuk8Pw). 
+
+Calcularemos PI con puntos al azar esparcidos en un plano cartesiano utilizando el [script de estadísticas](https://github.com/francomanca93/Escuela-DataScience/blob/master/programacion-dinamica-y-estocastica/estadisticas.py) y utilizaremos las funciones de desviación estándar y media que creadas. Queremos tener un 95% de certeza.
+
+En el sigueinte [script](https://github.com/francomanca93/Escuela-DataScience/blob/master/programacion-dinamica-y-estocastica/calculo_pi.py) tenemos el cálculo de Pi utilizando las simulaciones de montecarlo.
+
+```py
+import random
+import math
+from estadisticas import desviacion_estandar, media
+
+def arrojar_agujas(numero_de_agujas):
+    '''Función que sirve para arrojar agujas.
+
+    - El bucle calcula cada distancia de las agujas que se arrojan representadas por puntos.
+    - Si la distancia del centro es menor a 1, la aguja se encuentra dentro del circulo.
+    - return int: 4 * (adentro_del_circulo / numero_de_agujas)
+    '''
+
+    adentro_del_circulo = 0
+    
+    for _ in range(numero_de_agujas):
+        x = random.random() * random.choice([-1, 1])
+        y = random.random() * random.choice([-1, 1])
+        distancia_desde_el_centro = math.sqrt(x**2 + y**2)
+
+        if distancia_desde_el_centro <= 1:
+            adentro_del_circulo += 1
+    
+    return 4 * (adentro_del_circulo / numero_de_agujas)
+
+def estimacion(numero_de_agujas, numero_de_intentos):
+    '''Función que sirve para estimar la media y la desviacion estandar de los numeros de intentos.
+
+    - El bucle sirve para agregar cada estimación de pi.
+    - return tupla: (media_estimados, sigma)
+    '''
+    estimados = []
+
+    for _ in range(numero_de_intentos):
+        estimacion_de_py = arrojar_agujas(numero_de_agujas)
+        estimados.append(estimacion_de_py)
+    
+    media_estimados = media(estimados)
+    sigma = desviacion_estandar(estimados)
+    print(f'Media de estimados = {round(media_estimados, 5)}, Desviación estandar = {round(sigma, 5)}, Agujas = {numero_de_agujas}')
+
+    return (media_estimados, sigma)
+
+def estimar_pi(precision, numero_de_intentos):
+    '''Función que me permite estimar el numero pi'''
+
+    numero_de_agujas = 1000
+    sigma = precision
+
+    while sigma >= precision / 1.96:
+        media, sigma = estimacion(numero_de_agujas, numero_de_intentos)
+        numero_de_agujas *= 2 
+    
+    return media
+
+if __name__ == "__main__":
+    estimar_pi(0.01, 1000)
+```
+
+
+```
+# Salida del código
+
+Media de estimados = 3.14216, Desviación estandar = 0.05133, Agujas = 1000
+Media de estimados = 3.14121, Desviación estandar = 0.03646, Agujas = 2000
+Media de estimados = 3.14203, Desviación estandar = 0.02561, Agujas = 4000
+Media de estimados = 3.14109, Desviación estandar = 0.01793, Agujas = 8000
+Media de estimados = 3.141, Desviación estandar = 0.01335, Agujas = 16000
+Media de estimados = 3.14178, Desviación estandar = 0.00887, Agujas = 32000
+Media de estimados = 3.14151, Desviación estandar = 0.00646, Agujas = 64000
+
+```
+
 ## Muestreo e Intervalos de Confianza
 ###     Muestreo
 ###     Teorema del Límite Central
