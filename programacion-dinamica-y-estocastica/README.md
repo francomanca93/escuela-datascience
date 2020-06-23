@@ -615,3 +615,8 @@ plt.show()
 - Las computadoras pueden resolver problemas determinísticos y estocásticos.
 - Podemos generar simulaciones computacionales para responder preguntas del mundo real. 
 - La inferencia estadística nos permite tener confianza de que nuestras simulaciones arrojan resultados válidos.
+
+***
+Volver a la [tabla de contenido principal de la Escuela de Data Science](https://github.com/francomanca93/Escuela-DataScience)
+
+ 

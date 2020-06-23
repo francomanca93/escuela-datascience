@@ -649,3 +649,9 @@ Para este problema sabemos que no podemos dividir los artículos, por lo que nue
 
 En la siguiente [practica](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/morral.py) tenemos el codigo resolviendo un caso simple del problema del morral.
 
+
+***
+Volver a la [tabla de contenido principal de la Escuela de Data Science](https://github.com/francomanca93/Escuela-DataScience)
+
+Continuar con [Programación Dinámica y Estocástica con Python](https://github.com/francomanca93/Escuela-DataScience/blob/master/programacion-dinamica-y-estocastica/README.md)
+ 

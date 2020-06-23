@@ -287,4 +287,9 @@ Es un método de programación defensiva. Se puede utilizar para verificar los t
 Sirve para debuguear. 
 
 [Utilizando asserts con excepciones](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/afirmaciones.py)
+
+***
+Volver a la [tabla de contenido principal de la Escuela de Data Science](https://github.com/francomanca93/Escuela-DataScience)
+
+Continuar con [Programación orientada a objetos y algoritmos con Python](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/README.md).
  
