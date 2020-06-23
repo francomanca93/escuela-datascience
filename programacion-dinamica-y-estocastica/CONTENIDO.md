@@ -538,7 +538,15 @@ Media de estimados = 3.14151, Desviación estandar = 0.00646, Agujas = 64000
 ```
 
 ## Muestreo e Intervalos de Confianza
+
 ###     Muestreo
+
+El [muestreo](https://es.wikipedia.org/wiki/Muestreo_(estad%C3%ADstica)) es muy importante cuando no tenemos acceso a toda la población que queremos explorar. Uno de los grandes descubrimientos de la estadística es que las muestras aleatorias tienden a mostrar las mismas propiedades de la población objetivo. Hasta este punto todos los muestreos que se han realizado en los scripts de este documento han sido de tipo probabilísticos.
+
+En un **muestreo aleatorio** cualquier miembro de la población tiene la misma probabilidad de ser escogido.
+
+En un **muestreo estratificado** tomamos en consideración las características de la población para partirla en subgrupos y luego tomamos muestras de cada subgrupo, esto incrementa la probabilidad de que el muestreo sea representativo de la población.
+
 ###     Teorema del Límite Central
 
 ## Datos Experimentales
