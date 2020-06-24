@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Introducción al Pensamiento Probabilistico
+  <h1>Introducción al Pensamiento Probabilístico
 </h1>
 </div>
 
@@ -7,7 +7,15 @@
   <img src="readme_img/introduccion-pensamiento-probabilistico.png" width="">
 </div>
 
+# Introducción al documento
+
 El contenido de este documento son apuntes del [Curso de Introducción al Pensamiento Probabilístico](https://platzi.com/clases/probabilistica/) y busca ser una guía. El mismo está dictado por [David Aroesti](https://github.com/jdaroesti) del team [Platzi](https://platzi.com).
+
+### Objetivos del documento
+- Desarrollar el pensamiento probabilistico. Este nos permitirá entender:
+    - Como calcular las probabilidades de lo que sucede a nuestro alrededor.
+    - Como actualizar estas probabilidades conforme se va teniendo expereciencia y evidencia del mundo.
+- Una introducción al Machine Learning y a los algoritmos de clasificación.
 
 # Tabla de contenido
 - [Programación probabilística](#Programación-probabilística)
