@@ -16,3 +16,4 @@ La siguiente tabla de contenido dirige a cada uno de los contenidos de los curso
 - [Introducción al pensamiento computacional con Python](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/README.md)
 - [Programación orientada a objetos y algoritmos con Python](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/README.md)
 - [Programación Dinámica y Estocástica con Python](https://github.com/francomanca93/Escuela-DataScience/blob/master/programacion-dinamica-y-estocastica/README.md)
+- [Introducción al Pensamiento Probabilístico ](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-probabilistico/README.md)

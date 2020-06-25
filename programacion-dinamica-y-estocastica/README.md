@@ -619,4 +619,4 @@ plt.show()
 ***
 Volver a la [tabla de contenido principal de la Escuela de Data Science](https://github.com/francomanca93/Escuela-DataScience)
 
- 
+Continuar con [Introducción al Pensamiento Probabilístico ](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-probabilistico/README.md)
