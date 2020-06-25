@@ -74,6 +74,66 @@ Otro ejemplo es cual es la probabilidad de que una persona **use drogas**, pero 
 `P(drogas) = P(musico) * P(drogas|musico) + P(no sea musico) * P(drogas|no sea musico)`
 
 ### Teorema de Bayes
+
+El [**teorema de Bayes**](https://es.wikipedia.org/wiki/Teorema_de_Bayes), en la teoría de la probabilidad, es una proposición planteada por el matemático inglés [Thomas Bayes](https://es.wikipedia.org/wiki/Thomas_Bayes) (1702-1761)​ y publicado en 1763, tras su muerte.
+<br>
+<div align="center">
+    <img src="readme_img/Thomas_Bayes.gif" height="60%">
+</div>
+<br>
+
+Este expresa que la probabilidad condicional de un evento aleatorio _A_ dado _B_ en términos de la distribución de probabilidad condicional del evento _B_ dado _A_ y la distribución de probabilidad marginal de solo _A_.
+
+En términos más generales y menos matemáticos, el teorema de Bayes es de enorme relevancia puesto que vincula la probabilidad de _A_ dado _B_ con la probabilidad de _B_ dado _A_. 
+
+Por ejemplo, sabiendo la probabilidad de tener un dolor de cabeza dado que se tiene gripe, se podría saber (si se tiene algún dato más), la probabilidad de tener gripe si se tiene un dolor de cabeza. Muestra este sencillo ejemplo la alta relevancia del teorema en cuestión para la ciencia en todas sus ramas, puesto que tiene vinculación íntima con la comprensión de la probabilidad de aspectos causales dados los efectos observados.
+
+> Sea <img src="readme_img/conjunto-a1-an.svg" height="15"> un conjunto de sucesos mutuamente excluyentes y exhaustivos, y tales que la probabilidad de cada uno de ellos es distinta de cero (0). Sea B un suceso cualquiera del que se conocen las probabilidades condicionales <img src="readme_img/pba.svg" height="15">. Entonces, la probabilidad <img src="readme_img/pab.svg" height="15"> viene dada por la expresión:
+> <br>
+> <div align="center">
+>     <img src="readme_img/bayes.svg" height="60">
+> </div>
+> <br>
+> 
+> donde:
+> - <img src="readme_img/pai.svg" height="15"> son las probabilidades a priori,
+> - <img src="readme_img/pba.svg" height="15"> es la probabilidad de <img src="readme_img/B.svg" height="12"> en la hipótesis <img src="readme_img/Ai.svg" height="15">,
+> - <img src="readme_img/pab.svg" height="15"> son las probabilidades a posteriori.
+
+
+> Como sabemos que <img src="readme_img/pb.svg" height="15"> podemos reemplazarlo en la ecuación y nos quedaría:
+> <br>
+> <div align="center">
+>     <img src="readme_img/bayes-expandido.svg" height="60">
+> </div>
+> <br>
+
+#### Entendiendo teorema de bayes
+
+En el siguiente enlace hay una excelente explicación animada del [Teorema de Bayes en 3Blue1Brown](https://www.youtube.com/watch?v=HZGCoVF3YvM&t).
+
+En las sigueints imagenes se puede ver el Teorema de Bayes y una representación visual del mismo. 
+
+<br>
+<div align="center">
+    <img src="readme_img/bayes-3b1b.png" height="">
+</div>
+<div align="center">
+    <img src="readme_img/geometria-bayes.png" height="">
+</div>
+<br>
+
+Analicemos la gráfica 
+- _P(H) = 13%_. **Probabilidad a priori** (Hipotesis)
+- _P(E|H) = 35%_ (El 35% de P(H)). Probabilidad del Evento **E** dada la probabilidad de la Hipotesis **H**.
+- _P(¬H) = 100% - 13%_. Probabilidad de que no ocurra la Hipotesis. 
+- P(E|¬H) = 13% (El 13% de P(¬H)). Probabilidad del Evento **E** dada la probabilidad de la Hipotesis no ocurra **¬H**.
+- _P(H|E) = 28%_. **Probabilidad a posteriori**. Probabilidad de la Hipotesis **H** dada la probabilidad de que ocurra el Evento **E**  .
+
+_P(H|E) = P(H) * P(E|H) / (P(H) * P(E|H) + P(¬H) * P(E|¬H))_ = (0,13×0,35)÷(0,13×0,35 + (1−0,13)×0,13)
+
+En el siguiente enlace se puede aplicar lo anterior descripto y jugar con diferentes probabilidades del [Teorema de Bayes de forma gráfica](https://www.skobelevs.ie/BayesTheorem/).
+
 ### Ejercicio de Bayes en código
 ### Aplicaciones del Teorema de Bayes
 
