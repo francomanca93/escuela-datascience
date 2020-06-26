@@ -297,6 +297,15 @@ Analizando la falacia:
 > - Que B sea la causa de A y al mismo tiempo A sea la de B, es decir, que estén de acuerdo, que sea una relación sinérgica o simbiótica donde la unión cataliza los efectos que se observan.
 
 ### Prejuicio en el muestreo
+
+Para que un [muestra estadística](https://es.wikipedia.org/wiki/Muestra_estad%C3%ADstica) pueda servir como base para la inferencia estadística tiene que ser aleatorio y representativo.
+
+Una muestra representativa es una pequeña cantidad ___algo___ que refleja, con la mayor precisión posible, a un grupo más grande. 
+
+El prejuicio en el muestreo elimina la representatividad de las muestras.
+
+A veces conseguir muestras es difícil, por lo que se utiliza a la población de más fácil acceso (ejemplo: en caso estudios universitarios), esto se debe evitar si queremos que nuestra sea representativa.
+
 ### Falacia del francotirador de Texas
 ### Porcentajes confusos
 ### Falacia de regresión
