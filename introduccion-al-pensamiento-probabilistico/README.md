@@ -324,6 +324,14 @@ Por eso **siempre** es importante ver el contexto ya que los porcentajes, en vac
 
 ### Falacia de regresión
 
+La [falacia de la regresión](https://es.wikipedia.org/wiki/Falacia_de_la_regresi%C3%B3n) o falacia del retroceso es una falacia en la que se asume una causa donde no existe.
+
+Muchos eventos fluctúan naturalmente, por ejemplo, la temperatura promedio de una ciudad, el rendimiento de un atleta, los rendimientos de un portafolio de inversión, etc.
+
+Antes de continuar cabe destacar que es la [regresión a la media](https://es.wikipedia.org/wiki/Regresi%C3%B3n_a_la_media). Este es el fenómeno en el que si una **variable es extrema** en su primera medición, tenderá a estar más cerca de la media en su segunda medición y, paradójicamente, si es extrema en su segunda medición, tenderá a haber estado más cerca de la media en su primera.
+
+Ahora, hay que tener en cuenta que cuando algo fluctúa y se aplican medidas correctivas se puede creer que existe un vínculo de causalidad en lugar de una regresión a la media.
+
 ## Introducción a Machine Learning
 ### Feature vectors
 ### Métricas de distancia
