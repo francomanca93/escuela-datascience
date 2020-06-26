@@ -264,6 +264,10 @@ Aunque nuestro software este bien estructurado, hay veces que el mismo puede arr
 En esta sección veremos diferentes errores de pensamientos que nos podemos encontrar y que debemos aprender a detectar cuando estemos frente a uno. 
 
 ### Garbage in, garbage out
+La calidad de nuestros datos es igual de fundamental que la precisión de nuestros cómputos. Cuando los datos son errados, aunque tengamos un cómputo excelente nuestro resultado serán erróneos.
+
+En pocas palabras: con datos errados las conclusiones serán erradas.
+
 ### Imágenes engañosas
 ### Cum Hoc Ergo Propter Hoc
 ### Prejuicio en el muestreo
