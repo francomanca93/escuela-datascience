@@ -307,6 +307,13 @@ El prejuicio en el muestreo elimina la representatividad de las muestras.
 A veces conseguir muestras es difícil, por lo que se utiliza a la población de más fácil acceso (ejemplo: en caso estudios universitarios), esto se debe evitar si queremos que nuestra sea representativa.
 
 ### Falacia del francotirador de Texas
+
+[Falacia del francotirador](https://es.wikipedia.org/wiki/Falacia_del_francotirador) Esta falacia lógica se da cuando no se toma la aleatoriedad en consideración, es decir, donde la información que no tiene relación alguna es interpretada, manipulada o maquillada hasta que ésta parezca tener un sentido. También sucede cuando uno se enfoca en las similitudes e ignora las diferencias.
+
+El nombre viene de un tirador que disparó aleatoriamente varios tiros a un granero y después pintó una diana centrada en cada uno de los tiros para autoproclamarse francotirador. 
+
+Cuando fallamos al tener una hipótesis antes de recolectar datos estamos en alto riesgo de caer en esta falacia (muy común en Data Science).
+
 ### Porcentajes confusos
 ### Falacia de regresión
 
