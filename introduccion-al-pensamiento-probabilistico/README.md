@@ -278,6 +278,24 @@ Las visualizaciones son muy importantes para entender un conjunto de datos. Erro
 **Nunca se debe confiar en una gráfica sin escalas o etiquetas.**
 
 ### Cum Hoc Ergo Propter Hoc
+
+[Cum Hoc Ergo Propter Hoc](https://es.wikipedia.org/wiki/Cum_hoc_ergo_propter_hoc) significa _Después de esto, eso_; ó _entonces a consecuencia de esto, eso_. 
+
+Esto es una falacia (es decir, un argumento que parece válido, pero que no lo es) que se comete al inferir que dos o más eventos están conectados causalmente porque se dan juntos.
+
+La falacia consiste en inferir que existe una relación causal entre dos o más eventos por haberse observado una correlación estadística entre ellos. Esta falacia muchas veces se refuta mediante la frase **correlación no implica causalidad**. 
+
+Dos variables están positivamente correlacionadas cuando se mueven en la misma dirección y negativamente correlacionadas cuando se mueven en direcciones opuestas. Esta correlación no implica causalidad.
+
+Puede existir variables escondidas que generen la correlación.
+
+Analizando la falacia: 
+> En general, la falacia reside en que, dados dos eventos A y B, al descubrir una correlación estadística entre ambos, es un error inferir que A causa B sin antes considerar la validez de al menos una de las siguientes cuatro posibilidades:
+> - Que B sea la causa de A.
+> - Que haya un tercer factor desconocido que sea realmente la causa de la relación entre A y B.
+> - Que la relación sea tan compleja y numerosa que los hechos sean simples coincidencias.
+> - Que B sea la causa de A y al mismo tiempo A sea la de B, es decir, que estén de acuerdo, que sea una relación sinérgica o simbiótica donde la unión cataliza los efectos que se observan.
+
 ### Prejuicio en el muestreo
 ### Falacia del francotirador de Texas
 ### Porcentajes confusos
