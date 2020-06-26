@@ -255,6 +255,14 @@ En esta rama existen muchos ejemplos como para cubrirlos todos, pero quiero por 
 ​
 
 ## Mentiras estadísticas
+
+Aunque nuestro software este bien estructurado, hay veces que el mismo puede arrojarnos errores, estos errores son como un tercer nivel de bugs, donde podemos identicar a 3:
+1. **Error de Sintaxis**. Error tradicional.
+2. **Error de Lógica**. Bugs mas complejos.
+3. **Error en el diseño del software**. Esto se debe por la forma en la que pensamos y llegamos a conclusiones. Bugs que no están en el programa en sí. Son los más difíciles de encontrar.  
+
+En esta sección veremos diferentes errores de pensamientos que nos podemos encontrar y que debemos aprender a detectar cuando estemos frente a uno. 
+
 ### Garbage in, garbage out
 ### Imágenes engañosas
 ### Cum Hoc Ergo Propter Hoc
