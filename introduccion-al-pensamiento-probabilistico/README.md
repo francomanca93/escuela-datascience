@@ -22,7 +22,7 @@ El contenido de este documento son apuntes del [Curso de Introducción al Pensam
     - [Introducción a la programación probabilística](#Introducción-a-la-programación-probabilística)
     - [Probabilidad condicional](#Probabilidad-condicional)
     - [Teorema de Bayes](#Teorema-de-Bayes)
-    - [Ejercicio de Bayes en código](#Ejercicio-de-Bayes-en-código)
+    - [Aplicando Teorema de Bayes](#Aplicando-Teorema-de-Bayes)
     - [Aplicaciones del Teorema de Bayes](#Aplicaciones-del-Teorema-de-Bayes)
 - [Mentiras estadísticas](#Mentiras-estadísticas)
     - [Garbage in, garbage out](#Garbage-in,-garbage-out)
@@ -134,7 +134,73 @@ _P(H|E) = P(H) * P(E|H) / (P(H) * P(E|H) + P(¬H) * P(E|¬H))_ = (0,13×0,35)÷(
 
 En el siguiente enlace se puede aplicar lo anterior descripto y jugar con diferentes probabilidades del [Teorema de Bayes de forma gráfica](https://www.skobelevs.ie/BayesTheorem/).
 
-### Ejercicio de Bayes en código
+### Aplicando Teorema de Bayes
+
+En el siguiente ejercicio se analizará los síntomas que alguien tiene antes de presentarse al médico y poder determinar cual es la probabilidad de que tenga cierta enfermedad. En este caso, la enfermedad será cancer. 
+
+<br>
+<div align="center">
+    <img src="readme_img/datos-sintomas-cancer.png" height="">
+</div>
+<br>
+
+Analizando variables:
+- **H**ipótesis = Tener cancer. 
+    - _P(H) = 1 / 100 000 = 0,00001 = 0,001%_
+- **E**videncia = Presentar síntomas.
+- ¬**H**ipótesis = No tener cancer. 
+    - _P(¬H) = 1 - P(H)= 0,99999 = 99,999%_
+- P(E|H) = Probabilidades de presentar síntomas dado que tenga cancer.
+    - _P(E|H) = 1 = 100%_
+- P(E|¬H) = Probabilidades presentar síntomas dado que no tenga cancer.
+    - _P(E|¬H) = 10 / 99999 = 0,000100001 = 0,0100001%_
+
+[Script](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-probabilistico/scripts/sintomas.py) que cálcula el teorema de bayes.
+
+```py
+def calcular_bayes(priori_H, prob_E_dado_H, prob_E):
+    '''Teorema de Bayes.
+    
+    Variables de entrada:
+    - priori_H = probabidad de la hipótesis
+    - prob_E_dado_H = probabidad de la evidencia dada la hipótesis
+    - prob_E = probabilidad de la evidencia
+
+    return (priori_H * prob_E_dado_H) / prob_E
+    '''
+    return (priori_H * prob_E_dado_H) / prob_E
+
+def prob_E(priori_H, prob_E_dado_H, prob_E_no_dado_H):
+    '''Función que regresa la probabilidad de la evidencia.
+
+    Variables de entrada:
+    - priori_H = probabidad de la hipótesis
+    - prob_E_dado_H = probabidad de la evidencia dada la hipótesis
+    - prob_E_no_dado_H = probabilidad de la evidencia no dada la hipótesis
+
+    return (priori_H * prob_E_dado_H) + (no_priori_H * prob_E_no_dado_H)
+    '''
+    no_priori_H = 1 - priori_H
+    return (priori_H * prob_E_dado_H) + (no_priori_H * prob_E_no_dado_H)
+
+
+if __name__ == '__main__':
+    prob_cancer = 1 / 100000
+    prob_sintoma_dado_cancer = 1
+    prob_sintoma_dado_no_cancer = 10 / 99999
+    prob_no_cancer = 1 - prob_cancer
+
+    prob_sintoma = prob_E(prob_cancer, prob_sintoma_dado_cancer, prob_sintoma_dado_no_cancer)
+    prob_cancer_dado_sintoma = calcular_bayes(prob_cancer, prob_sintoma_dado_cancer, prob_sintoma)
+
+    print(prob_cancer_dado_sintoma)
+```
+
+Salida:
+```
+0.09090909090909091
+```
+
 ### Aplicaciones del Teorema de Bayes
 
 ## Mentiras estadísticas
