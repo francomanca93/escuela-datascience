@@ -32,6 +32,8 @@ El contenido de este documento son apuntes del [Curso de Introducción al Pensam
     - [Falacia del francotirador de Texas](#Falacia-del-francotirador-de-Texas)
     - [Porcentajes confusos](#Porcentajes-confusos)
     - [Falacia de regresión](#Falacia-de-regresión)
+    - [Tabla resumen de mentiras estadísticas](#Tabla-resumen-de-mentiras-estadísticas)
+
 - [Introducción a Machine Learning](#Introducción-a-Machine-Learning)
     - [Feature vectors](#Feature-vectors)
     - [Métricas de distancia](#Métricas-de-distancia)
@@ -331,6 +333,18 @@ Muchos eventos fluctúan naturalmente, por ejemplo, la temperatura promedio de u
 Antes de continuar cabe destacar que es la [regresión a la media](https://es.wikipedia.org/wiki/Regresi%C3%B3n_a_la_media). Este es el fenómeno en el que si una **variable es extrema** en su primera medición, tenderá a estar más cerca de la media en su segunda medición y, paradójicamente, si es extrema en su segunda medición, tenderá a haber estado más cerca de la media en su primera.
 
 Ahora, hay que tener en cuenta que cuando algo fluctúa y se aplican medidas correctivas se puede creer que existe un vínculo de causalidad en lugar de una regresión a la media.
+
+### Tabla resumen de mentiras estadísticas
+
+| Conceptos | Definiciones |
+| --------- | ------------ |
+| Garbage in, garbage out | Si le insertas datos basuras, recibirás resultados basuras. |
+| Imágenes engañosas | Conclusiones incorrectas, escalas que no tienen sentido, o falta de etiqueta en un gráfico. |
+| Cum Hoc Ergo Propter Hoc | Error de asignar causalidad cuando sólo existe correlación. |
+| Prejucios en el muestreo | Muestra no aleatoria o no representativa |
+| Falacia del francotirador de texas | No tomar la aleatoriedad en consideración de nuestro pensamiento. Enfocarse en las similitudes e ignorar las diferencias. |
+| Porcentajes confusos | Falta de información respecto al contexto o la fuente de los datos. |
+| Falacia de regresión | Pensar que existe un vínculo de causalidad cuando en realidad se trata de regresión a la media. |
 
 ## Introducción a Machine Learning
 ### Feature vectors
