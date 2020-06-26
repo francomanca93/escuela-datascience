@@ -269,6 +269,14 @@ La calidad de nuestros datos es igual de fundamental que la precisión de nuestr
 En pocas palabras: con datos errados las conclusiones serán erradas.
 
 ### Imágenes engañosas
+
+Las visualizaciones son muy importantes para entender un conjunto de datos. Errores que pueden confundir o manipular y llegar a conclusiones erroneas cuando analizamos gráficas pueden ser: 
+- **Variación de escalas.** Cuando se juega con la escala se puede llegar a conclusiones incorrectas.
+- **Sin Etiquetas.** Si no hay etiquetas, no se puede llegar a una conclusión. 
+- **Sin escalas.** Si no hay escalas, no podemos comparar. 
+
+**Nunca se debe confiar en una gráfica sin escalas o etiquetas.**
+
 ### Cum Hoc Ergo Propter Hoc
 ### Prejuicio en el muestreo
 ### Falacia del francotirador de Texas
