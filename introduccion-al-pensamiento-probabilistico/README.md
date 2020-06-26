@@ -315,6 +315,13 @@ El nombre viene de un tirador que disparó aleatoriamente varios tiros a un gran
 Cuando fallamos al tener una hipótesis antes de recolectar datos estamos en alto riesgo de caer en esta falacia (muy común en Data Science).
 
 ### Porcentajes confusos
+
+Cuando no sabemos la cuenta total de donde se obtiene un porcentaje tenemos el riesgo de concluir falsos resultados. 
+
+Los porcentajes son una medida **RELATIVA**, significa que varían en **RELACIÓN** a el dato que estemos tomando.
+
+Por eso **siempre** es importante ver el contexto ya que los porcentajes, en vacio, no significan mucho o básicamente nada.
+
 ### Falacia de regresión
 
 ## Introducción a Machine Learning
