@@ -347,6 +347,31 @@ Ahora, hay que tener en cuenta que cuando algo fluctúa y se aplican medidas cor
 | Falacia de regresión | Pensar que existe un vínculo de causalidad cuando en realidad se trata de regresión a la media. |
 
 ## Introducción a Machine Learning
+
+El [Machine Learning](https://es.wikipedia.org/wiki/Aprendizaje_autom%C3%A1tico) es el subcampo de las ciencias de la computación y una rama de la inteligencia artificial. Se define como:
+
+> "Es el campo de estudio que le da a las computadoras la habilidad de aprender sin ser explícitamente programadas." - Arthur Samuel, 1959.
+
+- Machine learning se utiliza cuando:
+    - Programar un algoritmo es imposible. 
+    - El problema es muy complejo o no se conocen altoritmos para resolverlo.
+    - Ayuda a los humanos a entender patrones (data mining).
+
+[Principales hitos en la historia de la inteligencia artificial](https://ecosistemahuawei.xataka.com/principales-hitos-historia-inteligencia-artificial/).
+
+Excelente video del canal de [DotCSV](https://www.youtube.com/channel/UCy5znSnfMsDwaLlROnZ7Qbg) donde hace un [mapa conceptual de que es el Machine Learning, Deep Learning e Inteligencia Artificial.](https://youtu.be/KytW151dpqU?list=PL-Ogd76BhmcDxef4liOGXGXLL-4h65bs4) 
+
+- Los tipos de algoritmos de Machine Learning pueden ser: 
+    - [**Aprendizaje supervisado.**](https://es.wikipedia.org/wiki/Aprendizaje_supervisado) El algoritmo produce una función que establece una correspondencia entre las entradas y las salidas deseadas del sistema.
+    - [**Aprendizaje No supervisado.**](https://es.wikipedia.org/wiki/Aprendizaje_no_supervisado) Todo el proceso de modelado se lleva a cabo sobre un conjunto de ejemplos formado tan sólo por entradas al sistema. No se tiene información sobre las categorías de esos ejemplos.
+    - [**Aprendizaje por refuerzo**](https://es.wikipedia.org/wiki/Aprendizaje_por_refuerzo). El algoritmo aprende observando el mundo que le rodea. Su información de entrada es el feedback o retroalimentación que obtiene del mundo exterior como respuesta a sus acciones. Por lo tanto, el sistema aprende a base de ensayo-error.
+
+En este video de DotCSV sobre los [tipos de algoritmos de Machine Learning](https://youtu.be/oT3arRRB2Cw?list=PL-Ogd76BhmcDxef4liOGXGXLL-4h65bs4) se puede ver canceptualmente mas en profundidad.
+
+- Batch vs online learning.
+    - Batch learning: El módelo se genera una sola vez y se aplica.
+    - Online learning: Se genera el modelo y se va actualizando constantemente conforme entran datos.
+
 ### Feature vectors
 ### Métricas de distancia
 
