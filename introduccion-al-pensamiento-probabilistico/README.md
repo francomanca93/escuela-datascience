@@ -373,6 +373,21 @@ En este video de DotCSV sobre los [tipos de algoritmos de Machine Learning](http
     - Online learning: Se genera el modelo y se va actualizando constantemente conforme entran datos.
 
 ### Feature vectors
+
+Se utilizan para representar características simbólicas o numéricas llamadas [__features__](https://en.wikipedia.org/wiki/Feature_(machine_learning)). Permiten analizar un objeto desde una perspectiva matemática.
+
+Los algoritmos de machine learning típicamente requieren representaciones numéricas para poder ejecutar el cómputo.
+
+Uno de los feature vectors más conocidos es la representación del color a través de RGB.
+
+Ejemplos de feature vectors:
+
+- color = [R, G, B]
+- Procesamiento de imágenes: Gradientes, bordes, áreas, colores, etc.
+- Reconocimiento de voz: Distancia de sonidos, nivel de ruido, razón ruido / señal, etc.
+- Spam: Dirección IP, estructura del texto, frecuencia de palabras, encabezados, etc.
+
+
 ### Métricas de distancia
 
 ## Agrupamiento
