@@ -390,6 +390,57 @@ Ejemplos de feature vectors:
 
 ### Métricas de distancia
 
+Muchos de los algoritmos de machine learning pueden clasificarse como algoritmos de optimización. Lo que desean optimizar es una función que en muchas ocasiones se refiere a la distancia entre features (caracteristicas).
+
+Existen diferentes tipos de distancias, las cuales se querran optimizar. Cada distancia servirá para tipos diferentes de aplicaciones.
+
+- [Distancia Euclidiana](https://es.wikipedia.org/wiki/Distancia): distancia en línea recta o la trayectoria más corta posible entre dos puntos.
+
+<br>
+<div align="center">
+    <img src="readme_img/Distancia-Euclidiana.png" height="">
+    <p><b>Distancia Euclidiana</b></p>
+</div>
+<br>
+
+- [Distancia Manhattan](https://es.wikipedia.org/wiki/Geometr%C3%ADa_del_taxista): calcula la distancia que se puede recorrer para llegar de un punto de datos a la otra si un camino en forma de rejilla es seguido. La distancia Manhattan entre dos elementos es la suma de las diferencias de sus correspondientes componentes.
+
+<br>
+<div align="center">
+    <img src="readme_img/Distancia-Manhattan.png" height="">
+    <p><b>Distancia de Manhattan</b></p>
+</div>
+<br>
+
+<br>
+<div align="center">
+    <img src="readme_img/distancia-Manhattan.svg" height="">
+    <p>Distancia Euclidiana(verde) vs Distancia de Manhattan(rojo, azul y amarillo)</p>
+</div>
+<br>
+
+
+
+- [**Distancia Chebyshev**](https://es.wikipedia.org/wiki/Distancia_de_Chebyshov): métrica definida en un espacio vectorial donde la distancia entre dos vectores es el mayor de sus diferencias a lo largo de cualquier dimensión de coordenadas.
+
+<br>
+<div align="center">
+    <img src="readme_img/Distancia-Chebyshev.png" height="">
+    <p><b>Distancia Chebyshev</b></p>
+</div>
+<br>
+
+- [**Distancia Kullback-Leibler**](https://es.wikipedia.org/wiki/Divergencia_de_Kullback-Leibler): es una medida no simétrica de la similitud o diferencia entre dos funciones de distribución de probabilidad P y Q. KL mide el número esperado de extra bits requeridos en muestras de código de P cuando se usa un código basado en Q, en lugar de un código basado en P. Generalmente P representa la “verdadera” distribución de los datos, observaciones, o cualquier distribución teórica. La medida Q generalmente representa una teoría, modelo, descripción o aproximación de P.
+
+<br>
+<div align="center">
+    <img src="readme_img/Distancia-Kullback-Leibler.png" height="">
+    <p><b>Distancia Kullback-Leibler</b></p>
+</div>
+<br>
+
+En el siguiente enlace se hace un [estudio comparativo sobre medidas de similitud y disimilitud en la agrupación de datos continuos](https://journals.plos.org/plosone/article/figure?id=10.1371/journal.pone.0144059.t001)
+
 ## Agrupamiento
 ### Introducción al agrupamiento
 ### Agrupamiento jerárquico
