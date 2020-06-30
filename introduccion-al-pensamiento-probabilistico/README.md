@@ -46,6 +46,12 @@ El contenido de este documento son apuntes del [Curso de Introducción al Pensam
     - [Introducción a la clasificación](#Introducción-a-la-clasificación)
     - [Clasificación K-nearest neighbors](#Clasificación-K-nearest-neighbors)
     - [Otras tecnicas de clasificación](#Otras-tecnicas-de-clasificación)
+        - [Clasificadores lineales](#Clasificadores-lineales)
+        - [Regresión logística](#Regresión-logística)
+        - [Nearest neighbor](#Nearest-neighbor)
+        - [Support Vector Machines](#Support-Vector-Machines)
+        - [Árboles de decisión](#Árboles-de-decisión)
+        - [Conclusión sobre algoritmos de clasificación](#Conclusión-sobre-algoritmos-de-clasificación)
 
 
 ## Programación probabilística
@@ -575,3 +581,89 @@ Es sencillo de implementar y tiene aplicaciones en medicina, finanzas, agricultu
 Es computacionalmente muy costoso y no sirve con datos de alta dimensionalidad.
 
 ### Otras tecnicas de clasificación
+
+La clasificación es un tipo de Machine Learning supervisado. Esto significa que para entrenar un modelo necesitamos un conjunto de datos (dataset) que ya tenga etiquetas (labels) para poder entrenar nuestros modelos.
+​
+
+La mejor forma de pensar en algoritmos de clasificación es pensar en el sombrero clasificador de Harry Potter. Cuando un nuevo alumno de Hogwarts entra a la escuela es necesario asignarlo/clasificarlo en una de las 4 casas. El sombrero obtiene los datos cuando se lo coloca el alumno y define cuál es el mejor match para su caso particular. Aquí estamos asumiendo que el sombrero es un algoritmo que ya ha sido entrenado y que los alumnos son nuevos data points que tienen que ser clasificados.
+
+Se explicarán los algoritmos con la siguiente nube de puntos con datos etiquetados de color rojo y azul:
+
+<br>
+<div align="center">
+    <img src="readme_img/ejemplo-clasificacion.png" width="">
+</div>
+<br>​
+
+#### Clasificadores lineales
+
+Los [clasificadores lineales](https://es.wikipedia.org/wiki/Clasificador_lineal) son tipos de clasificadores que se distinguen porque dividen el conjunto de datos con una línea (que puede ser multidimensional dependiendo de la cantidad de features que hemos utilizado para definir a nuestros datos). Esto genera áreas dentro de nuestro espacio de búsqueda para que cuando coloquemos un nuevo dato podamos clasificarlo fácilmente.
+
+<br>
+<div align="center">
+    <img src="readme_img/clasificador-lineal.png" width="">
+    <p><b></b></p>
+</div>
+<br>​
+
+El problema con este tipo de modelos es que son pocos flexibles cuando el conjunto de datos no puede ser separado fácilmente con una simple línea; por ejemplo, cuando necesitáramos una figura más compleja para dividirlo (como un polígono).
+​
+#### Regresión logística
+
+[Regresión logística](https://es.wikipedia.org/wiki/Regresi%C3%B3n_log%C3%ADstica) es un algoritmo que se parece mucho a los clasificadores lineales, con la diferencia de que no se divide simplemente con una línea, sino con un gradiente que determina la probabilidad de que un punto pertenezca a una categoría u otra. Es decir, la gradiente determina la probabilidad de que un punto sea asignado a una categoría y mientras un dato se aleje más en una dirección será mayor la probabilidad de que pertenezca a una categoría.
+​
+<br>
+<div align="center">
+    <img src="readme_img/regresion-logistica.png" width="">
+</div>
+<br>​
+
+#### Nearest neighbor
+
+Los modelos que utilizan [nearest neighbor](https://es.wikipedia.org/wiki/K_vecinos_m%C3%A1s_pr%C3%B3ximos#Algoritmo_de_clasificaci%C3%B3n) se apoyan de los datos que ya han sido clasificados para determinar la distancia entre sus “vecinos más cercanos.” El algoritmo más común que utiliza esta técnica se llama K-nearest neighbors y la K representa el número de vecinos que se utilizarán para clasificar los datos. En pocas palabras, se identifican los datos más cercanos y en el caso más sencillo se hace una votación simple (por ejemplo, 5 azules, 2 rojos, por lo tanto azul).
+​
+
+Una característica de estos modelos es que “dibujan” una línea que se asemeja a una costa para clasificar los datos. Mientras K sea más grande la “línea costera” se alisa y se asemeja más y más a una línea simple. Por lo tanto, la definición de K tiene un impacto importante en el desempeño de nuestro algoritmo de clasificación. Esto se puede ver en las siguientes imagenes.
+
+<br>
+<div align="center">
+    <img src="readme_img/nn1.png" width="">
+    <img src="readme_img/nn2-10.png" width="">
+    <img src="readme_img/nn3-100.png" width="">
+</div>
+<br>​
+​
+
+#### Support Vector Machines
+
+[Suport Vector Machines](https://es.wikipedia.org/wiki/M%C3%A1quinas_de_vectores_de_soporte) son algoritmos que se diferencian por tener la habilidad de generar figuras complejas (polígonos) que pueden agrupar datos. Si la figura que tendríamos que dibujar para dividir nuestros datos es diferente a una línea (círculos, polígonos, etc.), entonces estos modelos son una buena opción.
+
+<br>
+<div align="center">
+    <img src="readme_img/svm1.png" width="">
+    <img src="readme_img/svm2.png" width="">
+</div>
+<br>​​
+
+#### Árboles de decisión
+
+[Árboles de decisión](https://es.wikipedia.org/wiki/Aprendizaje_basado_en_%C3%A1rboles_de_decisi%C3%B3n) son algoritmos que nos permiten generar una árbol que tenemos que recorrer y tomar decisiones cada vez que avanzamos en un nivel. Por ejemplo:
+​
+- Si un feature en análisis es mayor a 5, dibuja la línea y=2x+3, de lo contrario dibuja y=-3x+5
+- Si el feature siguiente es menor a 2, dibuja otra línea y así sucesivamente.
+
+El gráfico para nuestros datos utilizando el algoritmo de arboles de decisión se veria asi:
+
+<br>
+<div align="center">
+    <img src="readme_img/tree.png" width="">
+</div>
+<br>​​
+
+Los gráficos fuerón obtenidos del siguiente [enlace](https://markd87.github.io/posts/2016/08/08/ml.html) donde tambien tenemos el código de práctica.
+
+#### Conclusión sobre algoritmos de clasificación
+
+La decisión de qué algoritmo utilizar depende de la forma en la que tengas tus datos y la precisión que desees obtener (a cambio de excluir o incluir falsos positivos y negativos). Otro punto a considerar es que estos algoritmos deben ser entrenados con datos previos y la calidad de estos datos y del modelo subsecuente importan mucho para obtener la mejor clasificación.
+
+La [documentación de Scikit-learn]((https://scikit-learn.org/stable/user_guide.html)) puede servir para profundizar en la forma en que funcionan estos algoritmos (y muchos otros) y para saber qué tipo de parámetros se pueden ajustar y cuál es la forma de los datos que esperan.
