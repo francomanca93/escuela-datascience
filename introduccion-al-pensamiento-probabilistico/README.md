@@ -554,4 +554,24 @@ Sigue dos pasos: aprendizaje (creación del modelo) y clasificación.
 <br>
 
 ### Clasificación K-nearest neighbors
+
+[K-nearest neighbors o KNN](https://es.wikipedia.org/wiki/K_vecinos_m%C3%A1s_pr%C3%B3ximos) parte del supuesto de que ya tenemos un conjunto de datos clasificado. Trata de encontrar los "vecinos más cercanos".
+
+K se refiere a la cantidad de vecinos que se utilizarán para clasificar un ejemplo que aún no ha sido clasificado.
+
+Ejemplo del algoritmo Knn. El ejemplo que se desea clasificar es la estrella roja. Tenemos dos tipos de clases como se ve en el gráfico.
+- Para k = 3 esta es clasificada con la *clase B*, circulos violetas, ya que hay solo un circulo amarillo y 2 violetas, dentro del círculo que los contiene.
+- Si k = 6 esta es clasificada con la *clase A*, circulos amarillos, ya que hay 4 circulos amarillos y 2 violetas, dentro del círculo externo.
+
+<br>
+<div align="center">
+    <img src="readme_img/knn.png" height="250">
+    <p><b></b></p>
+</div>
+<br>
+
+Es sencillo de implementar y tiene aplicaciones en medicina, finanzas, agricultura, etc.
+
+Es computacionalmente muy costoso y no sirve con datos de alta dimensionalidad.
+
 ### Otras tecnicas de clasificación
