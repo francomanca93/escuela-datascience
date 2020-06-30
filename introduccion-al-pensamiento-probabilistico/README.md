@@ -486,6 +486,22 @@ Es importante determinar qué medida de distancia vamos a utilizar y los puntos 
 
 
 ### Agrupamiento K-means
+
+[Agrupamiento K-Means](https://es.wikipedia.org/wiki/K-medias) es un método de agrupamiento, que tiene como objetivo la partición de un conjunto de n observaciones en k grupos en el que cada observación pertenece al grupo cuyo valor medio es más cercano. 
+
+<br>
+<div align="center">
+    <img src="readme_img/kmeans.gif" height="">
+    <p><b> Agrupamiento K-Means</b></p>
+</div>
+<br>
+
+1. K centroides iniciales (en este caso k=4) son generados aleatoriamente dentro de un conjunto de datos (mostrados en color). 
+2. k grupos son generados asociándole el punto con la media más cercana. La partición aquí representa el diagrama de Voronoi generado por los centroides. 
+3. EL centroide de cada uno de los k grupos se recalcula. 
+4. Pasos 2 y 3 se repiten hasta que se logre la convergencia. 
+
+
 ### Otras técnicas de agrupamiento
 
 ## Clasificación
