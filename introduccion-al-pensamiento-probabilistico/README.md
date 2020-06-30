@@ -464,6 +464,27 @@ Las técnicas de agrupamiento encuentran aplicación en diversos ámbitos, entre
 - En biometría para identificación del locutor o de caras.
 
 ### Agrupamiento jerárquico
+
+El [agrupamiento jerarquico](https://es.wikipedia.org/wiki/Agrupamiento_jer%C3%A1rquico) es un algoritmo que agrupa objetos similares en grupos llamados clusters. 
+
+El algoritmo comienza tratando a cada objeto como un cluster individual y luego realiza los siguientes pasos de manera recursiva:
+
+- Identifica los 2 clusters con menor distancia (lo más similares).
+- Agrupa los 2 clusters en 1 nuevo.
+
+El output final es un dendrograma que muestra la relación entre objetos y grupos.
+
+<br>
+<div align="center">
+    <img src="readme_img/hierarch.gif" height="">
+    <p>Izquierda:<b> Formación de Clusters.</b></p>
+    <p>Derecha:<b> Dendrograma</b></p>
+</div>
+<br>
+
+Es importante determinar qué medida de distancia vamos a utilizar y los puntos a utilizar en cada cluster (linkage criteria).
+
+
 ### Agrupamiento K-means
 ### Otras técnicas de agrupamiento
 
