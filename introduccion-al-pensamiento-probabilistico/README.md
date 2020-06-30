@@ -443,6 +443,26 @@ En el siguiente enlace se hace un [estudio comparativo sobre medidas de similitu
 
 ## Agrupamiento
 ### Introducción al agrupamiento
+
+[Algoritmo de agrupamiento o Clustering](https://es.wikipedia.org/wiki/Algoritmo_de_agrupamiento) es un proceso mediante el cual se agrupan objetos similares en clusters que los identifican. Se clasifican como aprendizaje no supervisado, ya que no requiere la utilización de etiquetas.
+
+<br>
+<div align="center">
+    <img src="readme_img/clustering.png" height="300">
+    <p><b>Ejemplo de distribución basada en Clustering</b></p>
+</div>
+<br>
+
+
+Permite entender la estructura de los datos y la similitud entre los mismos.
+
+Las técnicas de agrupamiento encuentran aplicación en diversos ámbitos, entre ellos:
+- En biología para clasificar animales y plantas.
+- En medicina para identificar enfermedades.
+- En marketing para identificar personas con hábitos de compras similares.
+- En teoría de la señal pueden servir para eliminar ruidos.
+- En biometría para identificación del locutor o de caras.
+
 ### Agrupamiento jerárquico
 ### Agrupamiento K-means
 ### Otras técnicas de agrupamiento
