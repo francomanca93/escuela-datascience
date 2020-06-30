@@ -537,5 +537,21 @@ No hay que quedarse con un modelo específico. Muchos Ingenieros de Machine Lear
 
 ## Clasificación
 ### Introducción a la clasificación
+
+La [clasificación](https://es.wikipedia.org/wiki/Clasificaci%C3%B3n_estad%C3%ADstica) es el problema de identificar a cuál de un conjunto de categorías (subpoblaciones) pertenece una nueva observación, sobre la base de un conjunto de datos de formación que contiene observaciones (o instancias) cuya categoría de miembros es conocida. Es un tipo de aprendizaje supervisado, ya que para que funcione, se necesitan etiquetas con los datos (labels).
+
+Un ejemplo sería asignar a un correo electrónico dado la clasificación de "spam" o "no spam", o asignar un diagnóstico a un paciente dado según las características observadas del paciente (género, presión arterial, presencia o ausencia de ciertos síntomas, etc.).
+
+Tambien se utiliza en muchos otros dominios, incluyendo la medicina, aprobación crediticia, reconocimiento de imágenes, vehículos autónomos, entre otros.
+
+Sigue dos pasos: aprendizaje (creación del modelo) y clasificación.
+
+<br>
+<div align="center">
+    <img src="readme_img/clasificacion-vs-clustering.jpg" height="">
+    <p><b></b></p>
+</div>
+<br>
+
 ### Clasificación K-nearest neighbors
 ### Otras tecnicas de clasificación
