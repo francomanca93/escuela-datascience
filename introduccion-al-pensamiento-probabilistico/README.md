@@ -504,7 +504,7 @@ Es importante determinar qué medida de distancia vamos a utilizar y los puntos 
 
 ### Otras técnicas de agrupamiento
 
-El agrupamiento es una técnica de Machine Learning que consiste, en pocas palabras, en dividir una población en grupos con la consecuencia de que los datos en un grupo son más similares entre ellos que entre los otros grupos.
+El [agrupamiento](https://es.wikipedia.org/wiki/An%C3%A1lisis_de_grupos) es una técnica de Machine Learning que consiste, en pocas palabras, en dividir una población en grupos con la consecuencia de que los datos en un grupo son más similares entre ellos que entre los otros grupos.
 
 ​
 Imagina que eres el dueño de una startup que hace e-commerce y quieres tener estrategias de venta para tus clientes. Es casi imposible diseñar una estrategia por cada individuo, pero se puede utilizar el agrupamiento para dividir a los clientes en grupos que tengan similitudes relevantes y así reducir el problema a unas cuantas estrategias.
@@ -523,13 +523,13 @@ Un punto muy importante que debes considerar cuando ejecutas técnicas de agrupa
 A grandes rasgos existen cuatro aproximaciones para definir similitud:
 
 
-- **Modelos conectivos**: Estos modelos asumen que los puntos más similares son los que se encuentran más cercanos en el espacio de búsqueda. Recuerda que este espacio puede ser altamente dimensional cuando tus feature vectors definen muchas características a analizar. Una desventaja de este tipo de modelos es que no escalan para conjuntos de datos grandes (aunque es posible utilizar una muestra y aplicar técnicas de estadística inferencial para obtener resultados).
+- [**Modelos conectivos**](https://es.wikipedia.org/wiki/An%C3%A1lisis_de_grupos#Agrupamiento_basado_en_conectividad_(agrupamiento_jer%C3%A1rquico)): Estos modelos asumen que los puntos más similares son los que se encuentran más cercanos en el espacio de búsqueda. Recuerda que este espacio puede ser altamente dimensional cuando tus feature vectors definen muchas características a analizar. Una desventaja de este tipo de modelos es que no escalan para conjuntos de datos grandes (aunque es posible utilizar una muestra y aplicar técnicas de estadística inferencial para obtener resultados).
 
-- **Modelos de centroide**: Este tipo de modelos definen similitud en términos de cercanía con el centroide del grupo. Los datos se agrupan al determinar cuál es el centroide más cercano.
+- [**Modelos de centroide**](https://es.wikipedia.org/wiki/An%C3%A1lisis_de_grupos#Agrupamiento_basado_en_centroide): Este tipo de modelos definen similitud en términos de cercanía con el centroide del grupo. Los datos se agrupan al determinar cuál es el centroide más cercano.
 
-- **Modelos de distribución**: Este tipo de modelos trata de asignar probabilidades a cada dato para determinar si pertenecen a una distribución específica o no (por ejemplo, normal, binomial, Poisson, etc.).
+- [**Modelos de distribución**](https://es.wikipedia.org/wiki/An%C3%A1lisis_de_grupos#Agrupamiento_basado_en_distribuciones): Este tipo de modelos trata de asignar probabilidades a cada dato para determinar si pertenecen a una distribución específica o no (por ejemplo, normal, binomial, Poisson, etc.).
 
-- **Modelos de densidad**: Estos modelos analizan la densidad de los datos en diferentes regiones y dividen el conjunto en grupos. Luego asignan los puntos de acuerdo a las áreas de densidad en las que se haya dividido el dataset.
+- [**Modelos de densidad**](https://es.wikipedia.org/wiki/An%C3%A1lisis_de_grupos#Agrupamiento_basado_en_densidad): Estos modelos analizan la densidad de los datos en diferentes regiones y dividen el conjunto en grupos. Luego asignan los puntos de acuerdo a las áreas de densidad en las que se haya dividido el dataset.
 
 ​
 No hay que quedarse con un modelo específico. Muchos Ingenieros de Machine Learning y Científicos de Datos utilizan varios modelos con el mismo conjunto de datos para analizar el rendimiento de los diversos algoritmos que tienen a su disposición. Así que hay que experimentar y siempre comparar los resultados antes de tomar una decisión.
