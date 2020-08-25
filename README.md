@@ -43,7 +43,7 @@ La siguiente tabla de contenido dirige a cada uno de los contenidos de los curso
 - Regresión Lineal con Python
 - Fundamentos de R
 - PostgreSQL Aplicado a Ciencia de Datos
-- Manipulación y Análisis de Datos con Pandas y Python
+- [Manipulación y Análisis de Datos con Pandas y Python](https://github.com/francomanca93/analisis-de-datos)
 
 ### Ingeniero en Machine Learning / Machine Learning Engineer
 
