@@ -24,26 +24,28 @@ La siguiente tabla de contenido dirige a cada uno de los contenidos de los curso
 ### Herramientas Fundamentales
 
 - [Curso Profesional de Git y GitHub](https://github.com/francomanca93/control-de-versiones)
-- Terminal y linea de comandos
+- [Terminal y linea de comandos](https://github.com/francomanca93/terminal-y-linea-de-comandos)
 - Fundamentos de Bases de datos
 - SQL y MySQL
 - SQL en Azure
 
 ### Ingeniero de datos / Data Engineer
 
-- [Ingeniería de datos con Python](https://github.com/francomanca93/ingenieria-de-datos)
+- [Web Scrapping con Python y Xpath](https://github.com/francomanca93/fundamentos-web-scraping-python-xpath)
 - Web Scrapping: Extracción de datos en la Web
-- Web Scrapping con Python y Xpath
 - Curso de Scrapy
+- [Ingeniería de datos con Python](https://github.com/francomanca93/ingenieria-de-datos)
 - Curso de AWS Redshift para Manejo de Big Data
 
 ### Científico de datos / Data Scientist
 
-- Fundamentos de Estadística y Análisis de Datos con Python
+- [Fundamentos de Estadística y Análisis de Datos con Python](https://github.com/francomanca93/fundamentos-de-estadistica-con-python)
 - Regresión Lineal con Python
 - Fundamentos de R
 - PostgreSQL Aplicado a Ciencia de Datos
 - [Manipulación y Análisis de Datos con Pandas y Python](https://github.com/francomanca93/analisis-de-datos)
+- Estadística inferencial con R
+- Curso de introducción a Spark
 
 ### Ingeniero en Machine Learning / Machine Learning Engineer
 
@@ -53,6 +55,8 @@ La siguiente tabla de contenido dirige a cada uno de los contenidos de los curso
 - TensorFlow.js
 - Redes Neuronales en Keras y Scikit-Learn
 - Fundamentos de Procesamiento de Lenguaje Natural con Python y NLTK
+- Algoritmos de Clasificación de Texto
+- Deep Learning con Pytorch
 
 ### Ingeniero en Inteligencia Artificial /  Artificial Intelligence Engineer
 
@@ -61,5 +65,4 @@ Los siguientes temas y cursos son complementos de los cursos de Machine Learning
 - Fundamentos Prácticos de Machine Learning
 - Machine Learning para Análisis Predictivo
 - Machine Learning Aplicado con Python
-- Algoritmos de Clasificación de Texto
 - Curso Profesional de Machine Learning con Scikit-Learn
