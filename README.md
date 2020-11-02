@@ -26,7 +26,7 @@ La siguiente tabla de contenido dirige a cada uno de los contenidos de los curso
 - [Curso Profesional de Git y GitHub](https://github.com/francomanca93/control-de-versiones)
 - [Terminal y linea de comandos](https://github.com/francomanca93/terminal-y-linea-de-comandos)
 - Fundamentos de Bases de datos
-- SQL y MySQL
+- [SQL y MySQL](https://github.com/francomanca93/sql-and-mysql)
 - SQL en Azure
 
 ### Ingeniero de datos / Data Engineer
