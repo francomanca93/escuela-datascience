@@ -32,7 +32,7 @@ La siguiente tabla de contenido dirige a cada uno de los contenidos de los curso
 ### Ingeniero de datos / Data Engineer
 
 - [Web Scrapping con Python y Xpath](https://github.com/francomanca93/fundamentos-web-scraping-python-xpath)
-- Web Scrapping: Extracción de datos en la Web
+- [Web Scrapping: Extracción de datos en la Web](https://github.com/francomanca93/web-scraping)
 - Curso de Scrapy
 - [Ingeniería de datos con Python](https://github.com/francomanca93/ingenieria-de-datos)
 - Curso de AWS Redshift para Manejo de Big Data
