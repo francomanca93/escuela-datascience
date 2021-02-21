@@ -16,10 +16,10 @@ La siguiente tabla de contenido dirige a cada uno de los contenidos de los curso
 
 ### Fundamentos de programación
 
-- [Introducción al pensamiento computacional con Python](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-computacional/README.md)
-- [Programación orientada a objetos y algoritmos con Python](https://github.com/francomanca93/Escuela-DataScience/blob/master/poo-y-algoritmos/README.md)
-- [Estadística computacional con Python](https://github.com/francomanca93/escuela-datascience/tree/master/estadistica-computacional-con-python)
-- [Introducción al Pensamiento Probabilístico](https://github.com/francomanca93/Escuela-DataScience/blob/master/introduccion-al-pensamiento-probabilistico/README.md)
+- [Introducción al pensamiento computacional con Python](https://github.com/francomanca93/pensamiento-computacional-python/blob/master/README.md)
+- [Programación orientada a objetos y algoritmos con Python](https://github.com/francomanca93/poo-algoritmos-python/blob/main/README.md)
+- [Estadística computacional con Python](https://github.com/francomanca93/estadistica-computacional-python/blob/main/README.md)
+- [Introducción al Pensamiento Probabilístico](https://github.com/francomanca93/pensamiento-probabilistico-python/blob/main/README.md)
 
 ### Herramientas Fundamentales
 
